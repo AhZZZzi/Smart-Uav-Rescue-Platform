@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dispatch Dashboard — Medical Drone Network</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Expanded:wght@700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0C0F12; --bg-elevated: #14181C; --bg-card: #181D22;
+    --hairline: #262C32; --text: #F2EFE9; --text-dim: #9098A0;
+    --text-faint: #5C636B; --flare: #FF6A3D; --flare-dim: #C7491F;
+    --locked: #4BC9A0; --danger: #E5535A; --amber: #E5B84B;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; }
+
+  header {
+    position: sticky; top: 0; z-index: 10;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 24px;
+    background: rgba(12,15,18,0.92); backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--hairline);
+  }
+  .brand { display: flex; align-items: center; gap: 9px; }
+  .brand .bar { width: 5px; height: 5px; border-radius: 50%; background: var(--flare); }
+  .brand .name { font-family: 'Archivo Expanded', sans-serif; font-weight: 800; font-size: 15px; }
+  .header-right { display: flex; align-items: center; gap: 16px; }
+  .conn-status { display: flex; align-items: center; gap: 7px; font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: var(--text-dim); }
+  .conn-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--text-faint); }
+  .conn-dot.live { background: var(--locked); box-shadow: 0 0 6px rgba(75,201,160,0.6); }
+  .user-chip { font-size: 13px; color: var(--text-dim); padding: 6px 12px; background: var(--bg-card); border: 1px solid var(--hairline); border-radius: 20px; }
+  .nav-btn { font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 600; color: var(--text-dim); background: none; border: none; cursor: pointer; text-decoration: none; }
+  .nav-btn:hover { color: var(--text); }
+  .logout-btn { font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 600; color: var(--text-dim); background: none; border: none; cursor: pointer; }
+  .logout-btn:hover { color: var(--danger); }
+
+  main { max-width: 920px; margin: 0 auto; padding: 28px 24px 60px; }
+
+  .stats-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 28px; }
+  .stat { background: var(--bg-card); border: 1px solid var(--hairline); border-radius: 14px; padding: 16px 18px; }
+  .stat .num { font-family: 'Archivo Expanded', sans-serif; font-weight: 800; font-size: 26px; }
+  .stat.pending .num { color: var(--flare); }
+  .stat.dispatched .num { color: var(--amber); }
+  .stat.completed .num { color: var(--locked); }
+  .stat .label { font-size: 12px; color: var(--text-dim); margin-top: 2px; }
+
+  .section-title { font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-faint); margin: 30px 0 12px; }
+
+  .telemetry-bar { display: flex; gap: 22px; flex-wrap: wrap; background: var(--bg-card); border: 1px solid var(--hairline); border-radius: 14px; padding: 14px 20px; margin-bottom: 8px; }
+  .tele-item { display: flex; flex-direction: column; gap: 2px; }
+  .tele-label { font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-faint); }
+  .tele-value { font-size: 14px; font-weight: 600; }
+  .tele-value.ok { color: var(--locked); }
+
+  .empty-state { background: var(--bg-card); border: 1px dashed var(--hairline); border-radius: 14px; padding: 30px; text-align: center; color: var(--text-faint); font-size: 13.5px; }
+
+  .req-card { background: var(--bg-card); border: 1px solid var(--hairline); border-radius: 16px; padding: 18px 20px; margin-bottom: 12px; display: flex; align-items: flex-start; gap: 18px; }
+  .req-card.pending { border-left: 3px solid var(--flare); }
+  .req-card.dispatched { border-left: 3px solid var(--amber); }
+  .req-card.completed { border-left: 3px solid var(--locked); opacity: 0.65; }
+  .req-card.flash { animation: flashIn 1s ease; }
+  @keyframes flashIn { 0% { background: rgba(255,106,61,0.18); } 100% { background: var(--bg-card); } }
+
+  .req-main { flex: 1; min-width: 0; }
+  .req-top { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .badge { font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: 0.06em; text-transform: uppercase; padding: 3px 9px; border-radius: 20px; }
+  .badge.pending { background: rgba(255,106,61,0.14); color: var(--flare); }
+  .badge.dispatched { background: rgba(229,184,75,0.14); color: var(--amber); }
+  .badge.completed { background: rgba(75,201,160,0.14); color: var(--locked); }
+  .req-time { font-size: 12px; color: var(--text-faint); }
+
+  .req-address { font-size: 13.5px; color: var(--text); font-weight: 500; margin-bottom: 4px; line-height: 1.45; }
+  .req-coords { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--text-faint); margin-bottom: 4px; }
+  .req-notes { font-size: 13px; color: var(--text-dim); line-height: 1.4; }
+
+  .req-actions { flex-shrink: 0; display: flex; gap: 8px; padding-top: 2px; }
+  .btn { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 13px; padding: 10px 16px; border-radius: 10px; border: none; cursor: pointer; white-space: nowrap; }
+  .btn-dispatch { background: linear-gradient(180deg, var(--flare), var(--flare-dim)); color: #fff; }
+  .btn-complete { background: var(--bg-elevated); border: 1px solid var(--hairline); color: var(--text); }
+  .btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+  .toast {
+    position: fixed; bottom: 28px; left: 50%; transform: translateX(-50%);
+    background: var(--bg-card); border: 1px solid var(--locked);
+    color: var(--locked); font-size: 14px; font-weight: 600;
+    padding: 13px 24px; border-radius: 40px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    opacity: 0; pointer-events: none;
+    transition: opacity 0.25s ease;
+    z-index: 100; white-space: nowrap;
+  }
+  .toast.show { opacity: 1; }
+  .toast.warning { border-color: var(--danger); color: var(--danger); }
+
+  .overlay {
+    display: none; position: fixed; inset: 0;
+    background: rgba(0,0,0,0.6); z-index: 50;
+    align-items: center; justify-content: center;
+  }
+  .overlay.show { display: flex; }
+  .dialog {
+    background: var(--bg-card); border: 1px solid var(--hairline);
+    border-radius: 18px; padding: 28px 28px 22px; max-width: 340px; width: 90%;
+    text-align: center;
+  }
+  .dialog h3 { font-family: 'Archivo Expanded', sans-serif; font-size: 17px; margin: 0 0 10px; }
+  .dialog p { font-size: 13.5px; color: var(--text-dim); margin: 0 0 22px; line-height: 1.5; }
+  .dialog-btns { display: flex; gap: 10px; }
+  .dialog-btns button { flex: 1; padding: 12px; border-radius: 10px; font-size: 14px; font-weight: 700; cursor: pointer; border: none; }
+  .btn-cancel-d { background: var(--bg-elevated); border: 1px solid var(--hairline) !important; border: none; color: var(--text-dim); }
+  .btn-confirm-d { background: linear-gradient(180deg, var(--locked), #3aab85); color: #fff; }
+
+  @media (max-width: 600px) {
+    .stats-row { gap: 8px; }
+    .req-card { flex-direction: column; }
+    .req-actions { width: 100%; }
+    .btn { flex: 1; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand"><span class="bar"></span><span class="name">DISPATCH</span></div>
+  <div class="header-right">
+    <div class="conn-status"><span class="conn-dot" id="connDot"></span><span id="connText">Connecting...</span></div>
+    <div class="user-chip" id="userChip">-</div>
+    <a class="nav-btn" id="adminLink" href="admin.html" style="display:none;">Admin</a>
+    <button class="logout-btn" onclick="logout()">Sign out</button>
+  </div>
+</header>
+
+<main>
+  <div class="stats-row">
+    <div class="stat pending"><div class="num" id="countPending">0</div><div class="label">Pending</div></div>
+    <div class="stat dispatched"><div class="num" id="countDispatched">0</div><div class="label">Dispatched</div></div>
+    <div class="stat completed"><div class="num" id="countCompleted">0</div><div class="label">Completed</div></div>
+  </div>
+
+  <div class="telemetry-bar" id="telemetryBar" style="display:none;">
+    <div class="tele-item"><span class="tele-label">Battery</span><span class="tele-value" id="teleBattery">-</span></div>
+    <div class="tele-item"><span class="tele-label">Mode</span><span class="tele-value" id="teleMode">-</span></div>
+    <div class="tele-item"><span class="tele-label">Position</span><span class="tele-value" id="telePos">-</span></div>
+    <div class="tele-item"><span class="tele-label">Armed</span><span class="tele-value ok" id="teleArmed">-</span></div>
+  </div>
+
+  <div class="section-title">Incoming requests</div>
+  <div id="requestList"></div>
+</main>
+
+<script>
+  const RELAY_HTTP = "https://uav-rescue-relay.onrender.com";
+  const RELAY_WS   = "wss://uav-rescue-relay.onrender.com";
+
+  const token    = sessionStorage.getItem("staff_token");
+  const username = sessionStorage.getItem("staff_username");
+  const role     = sessionStorage.getItem("staff_role");
+
+  if (!token) { window.location.href = "login.html"; }
+
+  document.getElementById("userChip").textContent = username || "Staff";
+  if (role === "admin") document.getElementById("adminLink").style.display = "inline";
+
+  function logout() { sessionStorage.clear(); window.location.href = "login.html"; }
+
+  let requests = {};
+
+  function formatTime(iso) {
+    return new Date(iso).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+  }
+
+  function escapeHtml(str) {
+    const d = document.createElement("div"); d.textContent = str; return d.innerHTML;
+  }
+
+  function render() {
+    const all = Object.values(requests).sort((a, b) => new Date(b.received_at) - new Date(a.received_at));
+    document.getElementById("countPending").textContent   = all.filter(r => r.status === "pending").length;
+    document.getElementById("countDispatched").textContent = all.filter(r => r.status === "dispatched").length;
+    document.getElementById("countCompleted").textContent  = all.filter(r => r.status === "completed").length;
+
+    const list = document.getElementById("requestList");
+    if (all.length === 0) {
+      list.innerHTML = '<div class="empty-state">No requests yet. New SOS signals will appear here in real time.</div>';
+      return;
+    }
+
+    list.innerHTML = all.map(r => `
+      <div class="req-card ${r.status}" data-id="${r.id}">
+        <div class="req-main">
+          <div class="req-top">
+            <span class="badge ${r.status}">${r.status}</span>
+            <span class="req-time">${formatTime(r.received_at)}</span>
+          </div>
+          ${r.address ? `<div class="req-address">${escapeHtml(r.address)}</div>` : ""}
+          <div class="req-coords">${r.lat.toFixed(6)}, ${r.lon.toFixed(6)}</div>
+          ${r.notes ? `<div class="req-notes">${escapeHtml(r.notes)}</div>` : ""}
+        </div>
+        <div class="req-actions">
+          ${r.status === "pending"    ? `<button class="btn btn-dispatch" onclick="dispatchRequest('${r.id}')">Dispatch drone</button>` : ""}
+          ${r.status === "dispatched" ? `<button class="btn btn-complete" onclick="completeRequest('${r.id}')">Mark delivered</button>` : ""}
+        </div>
+      </div>`).join("");
+  }
+
+  async function loadRequests() {
+    const res = await fetch(`${RELAY_HTTP}/requests`, { headers: { Authorization: `Bearer ${token}` } });
+    if (res.status === 401) { logout(); return; }
+    const data = await res.json();
+    requests = {};
+    data.forEach(r => requests[r.id] = r);
+    render();
+  }
+
+  async function dispatchRequest(id) {
+    const res = await fetch(`${RELAY_HTTP}/requests/${id}/dispatch`, { method: "POST", headers: { Authorization: `Bearer ${token}` } });
+    if (res.ok) { requests[id] = await res.json(); render(); }
+  }
+
+  let pendingCompleteId = null;
+
+  function showToast(msg, variant = "success") {
+    const t = document.getElementById("toast");
+    t.textContent = msg;
+    t.classList.remove("warning");
+    if (variant === "warning") t.classList.add("warning");
+    t.classList.add("show");
+    setTimeout(() => t.classList.remove("show"), 2800);
+  }
+
+  function completeRequest(id) {
+    pendingCompleteId = id;
+    document.getElementById("confirmOverlay").classList.add("show");
+  }
+
+  function closeConfirm() {
+    pendingCompleteId = null;
+    document.getElementById("confirmOverlay").classList.remove("show");
+  }
+
+  async function confirmComplete() {
+    const id = pendingCompleteId;   // save before closeConfirm() clears it
+    closeConfirm();
+    if (!id) return;
+    const res = await fetch(`${RELAY_HTTP}/requests/${id}/complete`, {
+      method: "POST", headers: { Authorization: `Bearer ${token}` }
+    });
+    if (res.ok) {
+      requests[id] = await res.json();
+      render();
+      showToast("Delivered successfully");
+    }
+  }
+
+  function connectLiveFeed() {
+    const ws = new WebSocket(`${RELAY_WS}/ws/staff?token=${token}`);
+    ws.onopen = () => { document.getElementById("connDot").classList.add("live"); document.getElementById("connText").textContent = "Live"; };
+    ws.onclose = () => { document.getElementById("connDot").classList.remove("live"); document.getElementById("connText").textContent = "Reconnecting..."; setTimeout(connectLiveFeed, 2000); };
+    ws.onmessage = (event) => {
+      const msg = JSON.parse(event.data);
+      if (msg.type === "new_request") {
+        requests[msg.request.id] = msg.request;
+        render();
+        setTimeout(() => { const c = document.querySelector(`[data-id="${msg.request.id}"]`); if (c) c.classList.add("flash"); }, 50);
+      }
+      if (msg.type === "request_updated") { requests[msg.request.id] = msg.request; render(); }
+      if (msg.type === "telemetry") {
+        const t = msg.data;
+        document.getElementById("telemetryBar").style.display = "flex";
+        document.getElementById("teleBattery").textContent = t.battery_pct ? `${t.battery_pct}%` : "-";
+        document.getElementById("teleMode").textContent = t.mode || "-";
+        document.getElementById("telePos").textContent = (t.lat && t.lon) ? `${t.lat.toFixed(4)}, ${t.lon.toFixed(4)}` : "-";
+        document.getElementById("teleArmed").textContent = t.armed ? "Yes" : "No";
+      }
+      if (msg.type === "mission_status") {
+        // Giả định relay bọc payload trong "data" giống telemetry ở trên;
+        // nếu relay forward nguyên message gốc từ bridge_node thì các field nằm trực tiếp trong msg.
+        const s = msg.data || msg;
+        if (s.status === "armed") {
+          showToast("Drone đã cất cánh, đang bay tới điểm hẹn");
+        } else if (s.status === "arrived") {
+          showToast("Drone đã tới nơi giao hàng");
+        } else if (s.status === "timeout") {
+          showToast("Cảnh báo: drone chưa xác nhận tới nơi sau thời gian dự kiến", "warning");
+        }
+      }
+    };
+  }
+
+  loadRequests();
+  connectLiveFeed();
+</script>
+  <div class="toast" id="toast"></div>
+
+  <div class="overlay" id="confirmOverlay">
+    <div class="dialog">
+      <h3>Confirm delivery</h3>
+      <p>Mark this request as delivered? This confirms the drone has successfully dropped off medical supplies.</p>
+      <div class="dialog-btns">
+        <button class="btn-cancel-d" onclick="closeConfirm()">Cancel</button>
+        <button class="btn-confirm-d" onclick="confirmComplete()">Yes, delivered</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+[0.689s] Invoking command in '/home/huyen/drone_project/ros2_ws/src/precision_landing': PYTHONPATH=/home/huyen/drone_project/ros2_ws/build/precision_landing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/huyen/drone_project/ros2_ws/install/precision_landing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/precision_landing build --build-base /home/huyen/drone_project/ros2_ws/build/precision_landing/build install --record /home/huyen/drone_project/ros2_ws/build/precision_landing/install.log --install-scripts $base/lib/precision_landing --single-version-externally-managed install_data
+[0.958s] running egg_info
+[0.958s] writing ../../build/precision_landing/precision_landing.egg-info/PKG-INFO
+[0.959s] writing dependency_links to ../../build/precision_landing/precision_landing.egg-info/dependency_links.txt
+[0.959s] writing entry points to ../../build/precision_landing/precision_landing.egg-info/entry_points.txt
+[0.959s] writing requirements to ../../build/precision_landing/precision_landing.egg-info/requires.txt
+[0.959s] writing top-level names to ../../build/precision_landing/precision_landing.egg-info/top_level.txt
+[0.961s] reading manifest file '../../build/precision_landing/precision_landing.egg-info/SOURCES.txt'
+[0.962s] writing manifest file '../../build/precision_landing/precision_landing.egg-info/SOURCES.txt'
+[0.963s] running build
+[0.963s] running build_py
+[0.963s] copying precision_landing/lora_protocol_node.py -> /home/huyen/drone_project/ros2_ws/build/precision_landing/build/lib/precision_landing
+[0.963s] copying precision_landing/lora_transport_mock.py -> /home/huyen/drone_project/ros2_ws/build/precision_landing/build/lib/precision_landing
+[0.963s] copying precision_landing/lora_ground_station_mock.py -> /home/huyen/drone_project/ros2_ws/build/precision_landing/build/lib/precision_landing
+[0.964s] running install
+[0.964s] running install_lib
+[0.965s] copying /home/huyen/drone_project/ros2_ws/build/precision_landing/build/lib/precision_landing/lora_protocol_node.py -> /home/huyen/drone_project/ros2_ws/install/precision_landing/lib/python3.10/site-packages/precision_landing
+[0.966s] copying /home/huyen/drone_project/ros2_ws/build/precision_landing/build/lib/precision_landing/lora_transport_mock.py -> /home/huyen/drone_project/ros2_ws/install/precision_landing/lib/python3.10/site-packages/precision_landing
+[0.966s] copying /home/huyen/drone_project/ros2_ws/build/precision_landing/build/lib/precision_landing/lora_ground_station_mock.py -> /home/huyen/drone_project/ros2_ws/install/precision_landing/lib/python3.10/site-packages/precision_landing
+[0.966s] byte-compiling /home/huyen/drone_project/ros2_ws/install/precision_landing/lib/python3.10/site-packages/precision_landing/lora_protocol_node.py to lora_protocol_node.cpython-310.pyc
+[0.968s] byte-compiling /home/huyen/drone_project/ros2_ws/install/precision_landing/lib/python3.10/site-packages/precision_landing/lora_transport_mock.py to lora_transport_mock.cpython-310.pyc
+[0.968s] byte-compiling /home/huyen/drone_project/ros2_ws/install/precision_landing/lib/python3.10/site-packages/precision_landing/lora_ground_station_mock.py to lora_ground_station_mock.cpython-310.pyc
+[0.969s] running install_data
+[0.969s] running install_egg_info
+[0.971s] removing '/home/huyen/drone_project/ros2_ws/install/precision_landing/lib/python3.10/site-packages/precision_landing-0.0.0-py3.10.egg-info' (and everything under it)
+[0.972s] Copying ../../build/precision_landing/precision_landing.egg-info to /home/huyen/drone_project/ros2_ws/install/precision_landing/lib/python3.10/site-packages/precision_landing-0.0.0-py3.10.egg-info
+[0.973s] running install_scripts
+[0.995s] Installing aruco_detector_node script to /home/huyen/drone_project/ros2_ws/install/precision_landing/lib/precision_landing
+[0.996s] Installing camera_reader_node script to /home/huyen/drone_project/ros2_ws/install/precision_landing/lib/precision_landing
+[0.996s] Installing gps_vio_switching_node script to /home/huyen/drone_project/ros2_ws/install/precision_landing/lib/precision_landing
+[0.996s] Installing landing_controller_node script to /home/huyen/drone_project/ros2_ws/install/precision_landing/lib/precision_landing
+[0.996s] Installing lora_ground_station_mock script to /home/huyen/drone_project/ros2_ws/install/precision_landing/lib/precision_landing
+[0.996s] Installing lora_protocol_node script to /home/huyen/drone_project/ros2_ws/install/precision_landing/lib/precision_landing
+[0.996s] Installing mock_marker_publisher script to /home/huyen/drone_project/ros2_ws/install/precision_landing/lib/precision_landing
+[0.997s] writing list of installed files to '/home/huyen/drone_project/ros2_ws/build/precision_landing/install.log'
+[1.023s] Invoked command in '/home/huyen/drone_project/ros2_ws/src/precision_landing' returned '0': PYTHONPATH=/home/huyen/drone_project/ros2_ws/build/precision_landing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/huyen/drone_project/ros2_ws/install/precision_landing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/precision_landing build --build-base /home/huyen/drone_project/ros2_ws/build/precision_landing/build install --record /home/huyen/drone_project/ros2_ws/build/precision_landing/install.log --install-scripts $base/lib/precision_landing --single-version-externally-managed install_data

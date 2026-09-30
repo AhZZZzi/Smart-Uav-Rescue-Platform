@@ -1,0 +1,3 @@
+[console_scripts]
+bridge_node = uav_cloud_bridge.bridge_node:main
+

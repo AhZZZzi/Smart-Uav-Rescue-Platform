@@ -1,0 +1,805 @@
+[0.000000] (-) TimerEvent: {}
+[0.000280] (-) JobUnselected: {'identifier': 'precision_landing'}
+[0.000365] (-) JobUnselected: {'identifier': 'uav_cloud_bridge'}
+[0.000394] (vio_slam_bridge) JobQueued: {'identifier': 'vio_slam_bridge', 'dependencies': OrderedDict()}
+[0.000539] (vio_slam_bridge) JobStarted: {'identifier': 'vio_slam_bridge'}
+[0.010307] (vio_slam_bridge) JobProgress: {'identifier': 'vio_slam_bridge', 'progress': 'cmake'}
+[0.011340] (vio_slam_bridge) JobProgress: {'identifier': 'vio_slam_bridge', 'progress': 'build'}
+[0.012140] (vio_slam_bridge) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/huyen/drone_project/ros2_ws/build/vio_slam_bridge', '--', '-j6', '-l6'], 'cwd': '/home/huyen/drone_project/ros2_ws/build/vio_slam_bridge', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'huyen'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/huyen'), ('OLDPWD', '/home/huyen/drone_project/ros2_ws'), ('ROS_PYTHON_VERSION', '3'), ('PS1', '\\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/huyen/drone_project/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'huyen'), ('NAME', 'HUYEN'), ('WSL_INTEROP', '/run/WSL/2082_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/huyen/.local/bin:/home/huyen/.local/bin:/home/huyen/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/iverilog/bin:/mnt/c/iverilog/gtkwave/bin:/mnt/c/altera_lite/25.1std/quartus/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files/MySQL/MySQL Shell 8.0/bin/:/mnt/c/Users/trant/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/trant/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/trant/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/trant/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/src/flutter/bin:/mnt/c/altera_lite/25.1std/questa_fse/win64:/snap/bin:/opt/xtensa-esp-elf/bin/:/opt/xtensa-esp-elf/bin/'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/huyen/drone_project/ros2_ws/install/uav_cloud_bridge:/home/huyen/drone_project/ros2_ws/install/precision_landing:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/huyen/drone_project/ros2_ws/build/vio_slam_bridge'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/huyen/drone_project/ros2_ws/install/uav_cloud_bridge/lib/python3.10/site-packages:/home/huyen/drone_project/ros2_ws/install/precision_landing/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/home/huyen/drone_project/ros2_ws/install/uav_cloud_bridge:/home/huyen/drone_project/ros2_ws/install/precision_landing:/opt/ros/humble')]), 'shell': False}
+[0.046036] (vio_slam_bridge) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.098720] (-) TimerEvent: {}
+[0.181309] (vio_slam_bridge) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.198861] (-) TimerEvent: {}
+[0.299203] (-) TimerEvent: {}
+[0.338284] (vio_slam_bridge) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.341005] (vio_slam_bridge) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.347691] (vio_slam_bridge) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.357518] (vio_slam_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.371133] (vio_slam_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.399370] (-) TimerEvent: {}
+[0.405480] (vio_slam_bridge) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.406902] (vio_slam_bridge) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.499451] (-) TimerEvent: {}
+[0.599751] (-) TimerEvent: {}
+[0.700034] (-) TimerEvent: {}
+[0.800348] (-) TimerEvent: {}
+[0.900743] (-) TimerEvent: {}
+[1.001232] (-) TimerEvent: {}
+[1.101684] (-) TimerEvent: {}
+[1.201988] (-) TimerEvent: {}
+[1.302356] (-) TimerEvent: {}
+[1.402695] (-) TimerEvent: {}
+[1.503090] (-) TimerEvent: {}
+[1.603398] (-) TimerEvent: {}
+[1.703710] (-) TimerEvent: {}
+[1.804132] (-) TimerEvent: {}
+[1.904672] (-) TimerEvent: {}
+[2.005054] (-) TimerEvent: {}
+[2.105399] (-) TimerEvent: {}
+[2.205906] (-) TimerEvent: {}
+[2.306239] (-) TimerEvent: {}
+[2.406684] (-) TimerEvent: {}
+[2.507046] (-) TimerEvent: {}
+[2.607363] (-) TimerEvent: {}
+[2.707684] (-) TimerEvent: {}
+[2.808061] (-) TimerEvent: {}
+[2.908411] (-) TimerEvent: {}
+[3.008758] (-) TimerEvent: {}
+[3.109079] (-) TimerEvent: {}
+[3.209439] (-) TimerEvent: {}
+[3.309762] (-) TimerEvent: {}
+[3.410221] (-) TimerEvent: {}
+[3.510571] (-) TimerEvent: {}
+[3.610871] (-) TimerEvent: {}
+[3.711233] (-) TimerEvent: {}
+[3.811528] (-) TimerEvent: {}
+[3.911875] (-) TimerEvent: {}
+[4.012245] (-) TimerEvent: {}
+[4.112610] (-) TimerEvent: {}
+[4.212964] (-) TimerEvent: {}
+[4.313288] (-) TimerEvent: {}
+[4.413633] (-) TimerEvent: {}
+[4.514038] (-) TimerEvent: {}
+[4.614351] (-) TimerEvent: {}
+[4.714671] (-) TimerEvent: {}
+[4.814953] (-) TimerEvent: {}
+[4.915274] (-) TimerEvent: {}
+[5.015673] (-) TimerEvent: {}
+[5.115945] (-) TimerEvent: {}
+[5.216254] (-) TimerEvent: {}
+[5.316573] (-) TimerEvent: {}
+[5.416862] (-) TimerEvent: {}
+[5.517279] (-) TimerEvent: {}
+[5.617689] (-) TimerEvent: {}
+[5.718266] (-) TimerEvent: {}
+[5.799293] (vio_slam_bridge) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.818406] (-) TimerEvent: {}
+[5.850111] (vio_slam_bridge) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[5.862840] (vio_slam_bridge) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[5.918471] (-) TimerEvent: {}
+[5.941810] (vio_slam_bridge) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindOpenGL.cmake:315 (message):\n'}
+[5.942141] (vio_slam_bridge) StderrLine: {'line': b'  Policy CMP0072 is not set: FindOpenGL prefers GLVND by default when\n'}
+[5.942254] (vio_slam_bridge) StderrLine: {'line': b'  available.  Run "cmake --help-policy CMP0072" for policy details.  Use the\n'}
+[5.942315] (vio_slam_bridge) StderrLine: {'line': b'  cmake_policy command to set the policy and suppress this warning.\n'}
+[5.942368] (vio_slam_bridge) StderrLine: {'line': b'\n'}
+[5.942418] (vio_slam_bridge) StderrLine: {'line': b'  FindOpenGL found both a legacy GL library:\n'}
+[5.942468] (vio_slam_bridge) StderrLine: {'line': b'\n'}
+[5.942516] (vio_slam_bridge) StderrLine: {'line': b'    OPENGL_gl_LIBRARY: /usr/lib/x86_64-linux-gnu/libGL.so\n'}
+[5.942564] (vio_slam_bridge) StderrLine: {'line': b'\n'}
+[5.942613] (vio_slam_bridge) StderrLine: {'line': b'  and GLVND libraries for OpenGL and GLX:\n'}
+[5.942661] (vio_slam_bridge) StderrLine: {'line': b'\n'}
+[5.942709] (vio_slam_bridge) StderrLine: {'line': b'    OPENGL_opengl_LIBRARY: /usr/lib/x86_64-linux-gnu/libOpenGL.so\n'}
+[5.942763] (vio_slam_bridge) StderrLine: {'line': b'    OPENGL_glx_LIBRARY: /usr/lib/x86_64-linux-gnu/libGLX.so\n'}
+[5.942824] (vio_slam_bridge) StderrLine: {'line': b'\n'}
+[5.942872] (vio_slam_bridge) StderrLine: {'line': b'  OpenGL_GL_PREFERENCE has not been set to "GLVND" or "LEGACY", so for\n'}
+[5.942919] (vio_slam_bridge) StderrLine: {'line': b'  compatibility with CMake 3.10 and below the legacy GL library will be used.\n'}
+[5.942966] (vio_slam_bridge) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[5.943013] (vio_slam_bridge) StderrLine: {'line': b'  CMakeLists.txt:18 (find_package)\n'}
+[5.943060] (vio_slam_bridge) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[5.943107] (vio_slam_bridge) StderrLine: {'line': b'\x1b[0m\n'}
+[5.995949] (vio_slam_bridge) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL \n'}
+[6.018577] (-) TimerEvent: {}
+[6.067401] (vio_slam_bridge) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.092953] (vio_slam_bridge) StdoutLine: {'line': b'-- Generating done\n'}
+[6.098884] (vio_slam_bridge) StdoutLine: {'line': b'-- Build files have been written to: /home/huyen/drone_project/ros2_ws/build/vio_slam_bridge\n'}
+[6.118675] (-) TimerEvent: {}
+[6.129748] (vio_slam_bridge) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target vio_node\x1b[0m\n'}
+[6.164792] (vio_slam_bridge) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/vio_node.dir/src/vio_node.cpp.o\x1b[0m\n'}
+[6.219438] (-) TimerEvent: {}
+[6.320629] (-) TimerEvent: {}
+[6.420977] (-) TimerEvent: {}
+[6.521394] (-) TimerEvent: {}
+[6.621722] (-) TimerEvent: {}
+[6.722066] (-) TimerEvent: {}
+[6.822412] (-) TimerEvent: {}
+[6.922745] (-) TimerEvent: {}
+[7.023122] (-) TimerEvent: {}
+[7.123496] (-) TimerEvent: {}
+[7.223811] (-) TimerEvent: {}
+[7.324110] (-) TimerEvent: {}
+[7.424413] (-) TimerEvent: {}
+[7.524801] (-) TimerEvent: {}
+[7.625204] (-) TimerEvent: {}
+[7.725501] (-) TimerEvent: {}
+[7.825826] (-) TimerEvent: {}
+[7.926235] (-) TimerEvent: {}
+[8.026625] (-) TimerEvent: {}
+[8.126968] (-) TimerEvent: {}
+[8.227299] (-) TimerEvent: {}
+[8.327671] (-) TimerEvent: {}
+[8.428003] (-) TimerEvent: {}
+[8.528392] (-) TimerEvent: {}
+[8.628664] (-) TimerEvent: {}
+[8.728993] (-) TimerEvent: {}
+[8.829323] (-) TimerEvent: {}
+[8.929624] (-) TimerEvent: {}
+[9.029960] (-) TimerEvent: {}
+[9.130356] (-) TimerEvent: {}
+[9.230837] (-) TimerEvent: {}
+[9.331243] (-) TimerEvent: {}
+[9.431593] (-) TimerEvent: {}
+[9.531934] (-) TimerEvent: {}
+[9.632341] (-) TimerEvent: {}
+[9.732767] (-) TimerEvent: {}
+[9.833095] (-) TimerEvent: {}
+[9.933423] (-) TimerEvent: {}
+[10.033748] (-) TimerEvent: {}
+[10.134108] (-) TimerEvent: {}
+[10.234521] (-) TimerEvent: {}
+[10.334882] (-) TimerEvent: {}
+[10.435275] (-) TimerEvent: {}
+[10.535652] (-) TimerEvent: {}
+[10.635984] (-) TimerEvent: {}
+[10.736368] (-) TimerEvent: {}
+[10.836714] (-) TimerEvent: {}
+[10.937097] (-) TimerEvent: {}
+[11.037438] (-) TimerEvent: {}
+[11.137780] (-) TimerEvent: {}
+[11.238197] (-) TimerEvent: {}
+[11.338521] (-) TimerEvent: {}
+[11.438874] (-) TimerEvent: {}
+[11.539240] (-) TimerEvent: {}
+[11.634817] (vio_slam_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37\x1b[m\x1b[K,\n'}
+[11.635049] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Converter.h:26\x1b[m\x1b[K,\n'}
+[11.635126] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:33\x1b[m\x1b[K,\n'}
+[11.635189] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[11.635241] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[11.635289] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[11.635338] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[11.635386] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[11.635433] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[11.635480] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9\x1b[m\x1b[K:\n'}
+[11.635528] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.635595] (vio_slam_bridge) StderrLine: {'line': b'   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & \x1b[01;35m\x1b[KAlignedBit\x1b[m\x1b[K ? Aligned : Unaligned >  HessianBlockType;\n'}
+[11.635646] (vio_slam_bridge) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.635695] (vio_slam_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[11.635742] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/LU:11\x1b[m\x1b[K,\n'}
+[11.635789] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12\x1b[m\x1b[K,\n'}
+[11.635836] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7\x1b[m\x1b[K,\n'}
+[11.635890] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7\x1b[m\x1b[K,\n'}
+[11.635943] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:28\x1b[m\x1b[K,\n'}
+[11.635990] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[11.636038] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[11.636177] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[11.636259] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[11.636330] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[11.636380] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[11.636428] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9\x1b[m\x1b[K:\n'}
+[11.636477] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[11.636526] (vio_slam_bridge) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[11.636574] (vio_slam_bridge) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.639394] (-) TimerEvent: {}
+[11.660702] (vio_slam_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38\x1b[m\x1b[K,\n'}
+[11.661064] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Converter.h:26\x1b[m\x1b[K,\n'}
+[11.661123] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:33\x1b[m\x1b[K,\n'}
+[11.661200] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[11.661250] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[11.661312] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[11.661357] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[11.661402] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[11.661447] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[11.661492] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9\x1b[m\x1b[K:\n'}
+[11.661538] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.661587] (vio_slam_bridge) StderrLine: {'line': b'   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & \x1b[01;35m\x1b[KAlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[11.661639] (vio_slam_bridge) StderrLine: {'line': b'      |                                                                                  \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.661684] (vio_slam_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[11.661729] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/LU:11\x1b[m\x1b[K,\n'}
+[11.661774] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12\x1b[m\x1b[K,\n'}
+[11.661861] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7\x1b[m\x1b[K,\n'}
+[11.661986] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7\x1b[m\x1b[K,\n'}
+[11.662035] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:28\x1b[m\x1b[K,\n'}
+[11.662133] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[11.662206] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[11.662254] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[11.662300] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[11.662346] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[11.662392] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[11.662437] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9\x1b[m\x1b[K:\n'}
+[11.662483] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[11.662528] (vio_slam_bridge) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[11.662574] (vio_slam_bridge) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.662625] (vio_slam_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38\x1b[m\x1b[K,\n'}
+[11.662671] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Converter.h:26\x1b[m\x1b[K,\n'}
+[11.662716] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:33\x1b[m\x1b[K,\n'}
+[11.662760] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[11.662805] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[11.662849] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[11.662892] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[11.662937] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[11.662985] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[11.663030] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9\x1b[m\x1b[K:\n'}
+[11.663127] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.663196] (vio_slam_bridge) StderrLine: {'line': b'   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & \x1b[01;35m\x1b[KAlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[11.663249] (vio_slam_bridge) StderrLine: {'line': b'      |                                                                                  \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.663295] (vio_slam_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[11.663341] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/LU:11\x1b[m\x1b[K,\n'}
+[11.663387] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12\x1b[m\x1b[K,\n'}
+[11.663433] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7\x1b[m\x1b[K,\n'}
+[11.663478] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7\x1b[m\x1b[K,\n'}
+[11.663523] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:28\x1b[m\x1b[K,\n'}
+[11.663568] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[11.663613] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[11.663658] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[11.663704] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[11.663748] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[11.663797] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[11.663843] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9\x1b[m\x1b[K:\n'}
+[11.663887] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[11.663932] (vio_slam_bridge) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[11.663977] (vio_slam_bridge) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.739453] (-) TimerEvent: {}
+[11.839790] (-) TimerEvent: {}
+[11.940191] (-) TimerEvent: {}
+[12.040453] (-) TimerEvent: {}
+[12.140795] (-) TimerEvent: {}
+[12.158690] (vio_slam_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37\x1b[m\x1b[K,\n'}
+[12.158853] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Converter.h:26\x1b[m\x1b[K,\n'}
+[12.158912] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:33\x1b[m\x1b[K,\n'}
+[12.158982] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[12.159046] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[12.159092] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[12.159138] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[12.159183] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[12.159228] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[12.159273] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9\x1b[m\x1b[K:\n'}
+[12.159320] (vio_slam_bridge) StderrLine: {'line': b'/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseVertex<3, Eigen::Matrix<double, 3, 1> >\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.159373] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_sba.h:40:35:\x1b[m\x1b[K   required from here\n'}
+[12.159420] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.159470] (vio_slam_bridge) StderrLine: {'line': b'   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned >  HessianBlockType;\n'}
+[12.159517] (vio_slam_bridge) StderrLine: {'line': b'      |                                                                  \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.159563] (vio_slam_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[12.159610] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/LU:11\x1b[m\x1b[K,\n'}
+[12.159656] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12\x1b[m\x1b[K,\n'}
+[12.159702] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7\x1b[m\x1b[K,\n'}
+[12.159748] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7\x1b[m\x1b[K,\n'}
+[12.159794] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:28\x1b[m\x1b[K,\n'}
+[12.159840] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[12.159895] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[12.159980] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[12.160025] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[12.160070] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[12.160115] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[12.160159] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9\x1b[m\x1b[K:\n'}
+[12.160205] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[12.160250] (vio_slam_bridge) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[12.160299] (vio_slam_bridge) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.193974] (vio_slam_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37\x1b[m\x1b[K,\n'}
+[12.194214] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Converter.h:26\x1b[m\x1b[K,\n'}
+[12.194273] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:33\x1b[m\x1b[K,\n'}
+[12.194322] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[12.194370] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[12.194417] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[12.194463] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[12.194508] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[12.194552] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[12.194597] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9\x1b[m\x1b[K:\n'}
+[12.194643] (vio_slam_bridge) StderrLine: {'line': b'/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseVertex<6, g2o::SE3Quat>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.194691] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:59:33:\x1b[m\x1b[K   required from here\n'}
+[12.194738] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.194788] (vio_slam_bridge) StderrLine: {'line': b'   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned >  HessianBlockType;\n'}
+[12.194834] (vio_slam_bridge) StderrLine: {'line': b'      |                                                                  \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.194891] (vio_slam_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[12.194937] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/LU:11\x1b[m\x1b[K,\n'}
+[12.194987] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12\x1b[m\x1b[K,\n'}
+[12.195033] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7\x1b[m\x1b[K,\n'}
+[12.195078] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7\x1b[m\x1b[K,\n'}
+[12.195123] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:28\x1b[m\x1b[K,\n'}
+[12.195168] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[12.195212] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[12.195256] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[12.195300] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[12.195345] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[12.195389] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[12.195434] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9\x1b[m\x1b[K:\n'}
+[12.195479] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[12.195524] (vio_slam_bridge) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[12.195607] (vio_slam_bridge) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.229579] (vio_slam_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38\x1b[m\x1b[K,\n'}
+[12.229826] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Converter.h:26\x1b[m\x1b[K,\n'}
+[12.230017] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:33\x1b[m\x1b[K,\n'}
+[12.230114] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[12.230216] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[12.230480] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[12.230597] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[12.230653] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[12.230701] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[12.230756] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9\x1b[m\x1b[K:\n'}
+[12.230804] (vio_slam_bridge) StderrLine: {'line': b'/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseBinaryEdge<6, g2o::SE3Quat, g2o::VertexSE3Expmap, g2o::VertexSE3Expmap>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.230852] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:83:24:\x1b[m\x1b[K   required from here\n'}
+[12.230899] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.230950] (vio_slam_bridge) StderrLine: {'line': b'   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[12.230997] (vio_slam_bridge) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.231043] (vio_slam_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[12.231089] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/LU:11\x1b[m\x1b[K,\n'}
+[12.231152] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12\x1b[m\x1b[K,\n'}
+[12.231213] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7\x1b[m\x1b[K,\n'}
+[12.231259] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7\x1b[m\x1b[K,\n'}
+[12.231304] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:28\x1b[m\x1b[K,\n'}
+[12.231348] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[12.231393] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[12.231437] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[12.231481] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[12.231530] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[12.231574] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[12.231618] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9\x1b[m\x1b[K:\n'}
+[12.231663] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[12.231709] (vio_slam_bridge) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[12.231754] (vio_slam_bridge) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.231802] (vio_slam_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38\x1b[m\x1b[K,\n'}
+[12.231847] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Converter.h:26\x1b[m\x1b[K,\n'}
+[12.231892] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:33\x1b[m\x1b[K,\n'}
+[12.231936] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[12.232020] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[12.232077] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[12.232146] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[12.232207] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[12.232264] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[12.232313] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9\x1b[m\x1b[K:\n'}
+[12.232359] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.232415] (vio_slam_bridge) StderrLine: {'line': b'   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[12.232463] (vio_slam_bridge) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.232508] (vio_slam_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[12.232552] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/LU:11\x1b[m\x1b[K,\n'}
+[12.232596] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12\x1b[m\x1b[K,\n'}
+[12.232640] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7\x1b[m\x1b[K,\n'}
+[12.232684] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7\x1b[m\x1b[K,\n'}
+[12.232728] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:28\x1b[m\x1b[K,\n'}
+[12.232772] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[12.232816] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[12.232860] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[12.232904] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[12.232952] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[12.232996] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[12.233040] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9\x1b[m\x1b[K:\n'}
+[12.233101] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[12.233162] (vio_slam_bridge) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[12.233206] (vio_slam_bridge) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.240961] (-) TimerEvent: {}
+[12.319753] (vio_slam_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38\x1b[m\x1b[K,\n'}
+[12.319904] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Converter.h:26\x1b[m\x1b[K,\n'}
+[12.319958] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:33\x1b[m\x1b[K,\n'}
+[12.320006] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[12.320054] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[12.320109] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[12.320155] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[12.320242] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[12.320316] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[12.320363] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9\x1b[m\x1b[K:\n'}
+[12.320410] (vio_slam_bridge) StderrLine: {'line': b'/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.320459] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:114:35:\x1b[m\x1b[K   required from here\n'}
+[12.320505] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.320561] (vio_slam_bridge) StderrLine: {'line': b'   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[12.320607] (vio_slam_bridge) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.320658] (vio_slam_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[12.320703] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/LU:11\x1b[m\x1b[K,\n'}
+[12.320747] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12\x1b[m\x1b[K,\n'}
+[12.320791] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7\x1b[m\x1b[K,\n'}
+[12.320835] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7\x1b[m\x1b[K,\n'}
+[12.320880] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:28\x1b[m\x1b[K,\n'}
+[12.320925] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[12.320969] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[12.321013] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[12.321057] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[12.321102] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[12.321146] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[12.321267] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9\x1b[m\x1b[K:\n'}
+[12.321315] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[12.321361] (vio_slam_bridge) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[12.321407] (vio_slam_bridge) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.338502] (vio_slam_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38\x1b[m\x1b[K,\n'}
+[12.338691] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Converter.h:26\x1b[m\x1b[K,\n'}
+[12.338748] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:33\x1b[m\x1b[K,\n'}
+[12.338797] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[12.338843] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[12.338888] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[12.338933] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[12.338997] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[12.339043] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[12.339175] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9\x1b[m\x1b[K:\n'}
+[12.339233] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.339288] (vio_slam_bridge) StderrLine: {'line': b'   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[12.339335] (vio_slam_bridge) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.339380] (vio_slam_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[12.339425] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/LU:11\x1b[m\x1b[K,\n'}
+[12.339470] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12\x1b[m\x1b[K,\n'}
+[12.339515] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7\x1b[m\x1b[K,\n'}
+[12.339559] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7\x1b[m\x1b[K,\n'}
+[12.339607] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:28\x1b[m\x1b[K,\n'}
+[12.339652] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[12.339697] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[12.339741] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[12.339786] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[12.339830] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[12.339895] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[12.339943] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9\x1b[m\x1b[K:\n'}
+[12.339989] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[12.340127] (vio_slam_bridge) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[12.340184] (vio_slam_bridge) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.341215] (-) TimerEvent: {}
+[12.412071] (vio_slam_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38\x1b[m\x1b[K,\n'}
+[12.412397] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Converter.h:26\x1b[m\x1b[K,\n'}
+[12.412458] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:33\x1b[m\x1b[K,\n'}
+[12.412519] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[12.412568] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[12.412665] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[12.412734] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[12.412781] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[12.412827] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[12.412871] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9\x1b[m\x1b[K:\n'}
+[12.412917] (vio_slam_bridge) StderrLine: {'line': b'/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseBinaryEdge<3, Eigen::Matrix<double, 3, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.412965] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:146:41:\x1b[m\x1b[K   required from here\n'}
+[12.413011] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.413069] (vio_slam_bridge) StderrLine: {'line': b'   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[12.413115] (vio_slam_bridge) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.413160] (vio_slam_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[12.413205] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/LU:11\x1b[m\x1b[K,\n'}
+[12.413250] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12\x1b[m\x1b[K,\n'}
+[12.413295] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7\x1b[m\x1b[K,\n'}
+[12.413339] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7\x1b[m\x1b[K,\n'}
+[12.413391] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:28\x1b[m\x1b[K,\n'}
+[12.413436] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[12.413480] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[12.413525] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[12.413615] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[12.413677] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[12.413725] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[12.413773] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9\x1b[m\x1b[K:\n'}
+[12.413846] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[12.413956] (vio_slam_bridge) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[12.414024] (vio_slam_bridge) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.414070] (vio_slam_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38\x1b[m\x1b[K,\n'}
+[12.414117] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Converter.h:26\x1b[m\x1b[K,\n'}
+[12.414163] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:33\x1b[m\x1b[K,\n'}
+[12.414208] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[12.414258] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[12.414303] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[12.414348] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[12.414393] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[12.414438] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[12.414482] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9\x1b[m\x1b[K:\n'}
+[12.414590] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.414746] (vio_slam_bridge) StderrLine: {'line': b'   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[12.414805] (vio_slam_bridge) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.414852] (vio_slam_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[12.414897] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/LU:11\x1b[m\x1b[K,\n'}
+[12.414941] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12\x1b[m\x1b[K,\n'}
+[12.414986] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7\x1b[m\x1b[K,\n'}
+[12.415039] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7\x1b[m\x1b[K,\n'}
+[12.415083] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:28\x1b[m\x1b[K,\n'}
+[12.415127] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[12.415171] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[12.415230] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[12.415294] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[12.415345] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[12.415396] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[12.415446] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9\x1b[m\x1b[K:\n'}
+[12.415537] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[12.415609] (vio_slam_bridge) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[12.415655] (vio_slam_bridge) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.441339] (-) TimerEvent: {}
+[12.541642] (-) TimerEvent: {}
+[12.641995] (-) TimerEvent: {}
+[12.675563] (vio_slam_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37\x1b[m\x1b[K,\n'}
+[12.675731] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Converter.h:26\x1b[m\x1b[K,\n'}
+[12.675792] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:33\x1b[m\x1b[K,\n'}
+[12.675862] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[12.675932] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[12.675980] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[12.676026] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[12.676071] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[12.676117] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[12.676163] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9\x1b[m\x1b[K:\n'}
+[12.676209] (vio_slam_bridge) StderrLine: {'line': b'/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseVertex<7, g2o::Sim3>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.676255] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:48:35:\x1b[m\x1b[K   required from here\n'}
+[12.676306] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.676381] (vio_slam_bridge) StderrLine: {'line': b'   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned >  HessianBlockType;\n'}
+[12.676429] (vio_slam_bridge) StderrLine: {'line': b'      |                                                                  \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.676476] (vio_slam_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[12.676592] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/LU:11\x1b[m\x1b[K,\n'}
+[12.676715] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12\x1b[m\x1b[K,\n'}
+[12.676825] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7\x1b[m\x1b[K,\n'}
+[12.676929] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7\x1b[m\x1b[K,\n'}
+[12.677043] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:28\x1b[m\x1b[K,\n'}
+[12.677151] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[12.677314] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[12.677422] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[12.677528] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[12.677633] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[12.677736] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[12.677934] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9\x1b[m\x1b[K:\n'}
+[12.678073] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[12.678167] (vio_slam_bridge) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[12.678260] (vio_slam_bridge) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.715455] (vio_slam_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38\x1b[m\x1b[K,\n'}
+[12.715610] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Converter.h:26\x1b[m\x1b[K,\n'}
+[12.715671] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:33\x1b[m\x1b[K,\n'}
+[12.715724] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[12.715784] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[12.715832] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[12.715883] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[12.715930] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[12.715976] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[12.716021] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9\x1b[m\x1b[K:\n'}
+[12.716070] (vio_slam_bridge) StderrLine: {'line': b'/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseBinaryEdge<7, g2o::Sim3, g2o::VertexSim3Expmap, g2o::VertexSim3Expmap>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.716118] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:99:27:\x1b[m\x1b[K   required from here\n'}
+[12.716164] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.716213] (vio_slam_bridge) StderrLine: {'line': b'   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[12.716277] (vio_slam_bridge) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.716337] (vio_slam_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[12.716382] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/LU:11\x1b[m\x1b[K,\n'}
+[12.716426] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12\x1b[m\x1b[K,\n'}
+[12.716470] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7\x1b[m\x1b[K,\n'}
+[12.716519] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7\x1b[m\x1b[K,\n'}
+[12.716564] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:28\x1b[m\x1b[K,\n'}
+[12.716608] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[12.716652] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[12.716696] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[12.716740] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[12.716785] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[12.716834] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[12.716879] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9\x1b[m\x1b[K:\n'}
+[12.716924] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[12.716970] (vio_slam_bridge) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[12.717015] (vio_slam_bridge) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.717061] (vio_slam_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38\x1b[m\x1b[K,\n'}
+[12.717150] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Converter.h:26\x1b[m\x1b[K,\n'}
+[12.717206] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:33\x1b[m\x1b[K,\n'}
+[12.717289] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[12.717335] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[12.717381] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[12.717426] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[12.717471] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[12.717516] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[12.717562] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9\x1b[m\x1b[K:\n'}
+[12.717612] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.717664] (vio_slam_bridge) StderrLine: {'line': b'   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[12.717711] (vio_slam_bridge) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.717814] (vio_slam_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[12.718062] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/LU:11\x1b[m\x1b[K,\n'}
+[12.718124] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12\x1b[m\x1b[K,\n'}
+[12.718189] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7\x1b[m\x1b[K,\n'}
+[12.718252] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7\x1b[m\x1b[K,\n'}
+[12.718308] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:28\x1b[m\x1b[K,\n'}
+[12.718355] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[12.718401] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[12.718447] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[12.718492] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[12.718537] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[12.718582] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[12.718627] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9\x1b[m\x1b[K:\n'}
+[12.718672] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[12.718717] (vio_slam_bridge) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[12.718762] (vio_slam_bridge) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.742129] (-) TimerEvent: {}
+[12.770346] (vio_slam_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38\x1b[m\x1b[K,\n'}
+[12.770514] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Converter.h:26\x1b[m\x1b[K,\n'}
+[12.770569] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:33\x1b[m\x1b[K,\n'}
+[12.770618] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[12.770665] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[12.770710] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[12.770754] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[12.770798] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[12.770842] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[12.770886] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9\x1b[m\x1b[K:\n'}
+[12.770931] (vio_slam_bridge) StderrLine: {'line': b'/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSim3Expmap>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.770987] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:130:36:\x1b[m\x1b[K   required from here\n'}
+[12.771032] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.771092] (vio_slam_bridge) StderrLine: {'line': b'   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[12.771141] (vio_slam_bridge) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.771187] (vio_slam_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[12.771251] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/LU:11\x1b[m\x1b[K,\n'}
+[12.771311] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12\x1b[m\x1b[K,\n'}
+[12.771356] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7\x1b[m\x1b[K,\n'}
+[12.771399] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7\x1b[m\x1b[K,\n'}
+[12.771443] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:28\x1b[m\x1b[K,\n'}
+[12.771487] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[12.771530] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[12.771575] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[12.771622] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[12.771666] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[12.771709] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[12.771752] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9\x1b[m\x1b[K:\n'}
+[12.771797] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[12.771841] (vio_slam_bridge) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[12.771885] (vio_slam_bridge) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.790180] (vio_slam_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38\x1b[m\x1b[K,\n'}
+[12.790336] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Converter.h:26\x1b[m\x1b[K,\n'}
+[12.790396] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:33\x1b[m\x1b[K,\n'}
+[12.790451] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[12.790504] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[12.790563] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[12.790614] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[12.790664] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[12.790719] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[12.790768] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9\x1b[m\x1b[K:\n'}
+[12.790816] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.790868] (vio_slam_bridge) StderrLine: {'line': b'   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[12.790916] (vio_slam_bridge) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.790963] (vio_slam_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[12.791011] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/LU:11\x1b[m\x1b[K,\n'}
+[12.791057] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12\x1b[m\x1b[K,\n'}
+[12.791103] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7\x1b[m\x1b[K,\n'}
+[12.791163] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7\x1b[m\x1b[K,\n'}
+[12.791207] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:28\x1b[m\x1b[K,\n'}
+[12.791257] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[12.791301] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[12.791344] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[12.791388] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[12.791431] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[12.791491] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[12.791555] (vio_slam_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9\x1b[m\x1b[K:\n'}
+[12.791605] (vio_slam_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[12.791660] (vio_slam_bridge) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[12.791708] (vio_slam_bridge) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.842200] (-) TimerEvent: {}
+[12.942520] (-) TimerEvent: {}
+[13.042831] (-) TimerEvent: {}
+[13.143188] (-) TimerEvent: {}
+[13.243544] (-) TimerEvent: {}
+[13.343837] (-) TimerEvent: {}
+[13.444159] (-) TimerEvent: {}
+[13.544502] (-) TimerEvent: {}
+[13.644853] (-) TimerEvent: {}
+[13.745154] (-) TimerEvent: {}
+[13.845494] (-) TimerEvent: {}
+[13.945811] (-) TimerEvent: {}
+[14.046185] (-) TimerEvent: {}
+[14.146512] (-) TimerEvent: {}
+[14.246826] (-) TimerEvent: {}
+[14.347156] (-) TimerEvent: {}
+[14.447480] (-) TimerEvent: {}
+[14.547770] (-) TimerEvent: {}
+[14.648186] (-) TimerEvent: {}
+[14.748636] (-) TimerEvent: {}
+[14.848960] (-) TimerEvent: {}
+[14.949351] (-) TimerEvent: {}
+[15.049670] (-) TimerEvent: {}
+[15.149956] (-) TimerEvent: {}
+[15.250278] (-) TimerEvent: {}
+[15.350609] (-) TimerEvent: {}
+[15.451029] (-) TimerEvent: {}
+[15.551356] (-) TimerEvent: {}
+[15.651686] (-) TimerEvent: {}
+[15.752032] (-) TimerEvent: {}
+[15.852575] (-) TimerEvent: {}
+[15.953249] (-) TimerEvent: {}
+[16.053800] (-) TimerEvent: {}
+[16.154402] (-) TimerEvent: {}
+[16.254935] (-) TimerEvent: {}
+[16.355554] (-) TimerEvent: {}
+[16.456090] (-) TimerEvent: {}
+[16.556660] (-) TimerEvent: {}
+[16.657179] (-) TimerEvent: {}
+[16.757617] (-) TimerEvent: {}
+[16.858078] (-) TimerEvent: {}
+[16.958598] (-) TimerEvent: {}
+[17.059031] (-) TimerEvent: {}
+[17.159518] (-) TimerEvent: {}
+[17.259919] (-) TimerEvent: {}
+[17.360304] (-) TimerEvent: {}
+[17.460752] (-) TimerEvent: {}
+[17.561190] (-) TimerEvent: {}
+[17.661502] (-) TimerEvent: {}
+[17.761935] (-) TimerEvent: {}
+[17.862257] (-) TimerEvent: {}
+[17.962582] (-) TimerEvent: {}
+[18.062901] (-) TimerEvent: {}
+[18.163181] (-) TimerEvent: {}
+[18.263504] (-) TimerEvent: {}
+[18.363826] (-) TimerEvent: {}
+[18.464202] (-) TimerEvent: {}
+[18.564549] (-) TimerEvent: {}
+[18.664836] (-) TimerEvent: {}
+[18.765196] (-) TimerEvent: {}
+[18.865498] (-) TimerEvent: {}
+[18.965980] (-) TimerEvent: {}
+[19.066316] (-) TimerEvent: {}
+[19.166662] (-) TimerEvent: {}
+[19.267079] (-) TimerEvent: {}
+[19.367386] (-) TimerEvent: {}
+[19.467744] (-) TimerEvent: {}
+[19.568065] (-) TimerEvent: {}
+[19.668359] (-) TimerEvent: {}
+[19.768731] (-) TimerEvent: {}
+[19.869102] (-) TimerEvent: {}
+[19.969455] (-) TimerEvent: {}
+[20.069818] (-) TimerEvent: {}
+[20.170209] (-) TimerEvent: {}
+[20.270578] (-) TimerEvent: {}
+[20.370913] (-) TimerEvent: {}
+[20.471260] (-) TimerEvent: {}
+[20.571633] (-) TimerEvent: {}
+[20.671921] (-) TimerEvent: {}
+[20.772289] (-) TimerEvent: {}
+[20.872623] (-) TimerEvent: {}
+[20.972983] (-) TimerEvent: {}
+[21.073347] (-) TimerEvent: {}
+[21.173624] (-) TimerEvent: {}
+[21.274006] (-) TimerEvent: {}
+[21.374412] (-) TimerEvent: {}
+[21.474743] (-) TimerEvent: {}
+[21.575108] (-) TimerEvent: {}
+[21.675390] (-) TimerEvent: {}
+[21.775857] (-) TimerEvent: {}
+[21.876372] (-) TimerEvent: {}
+[21.976702] (-) TimerEvent: {}
+[22.077009] (-) TimerEvent: {}
+[22.177358] (-) TimerEvent: {}
+[22.277702] (-) TimerEvent: {}
+[22.378073] (-) TimerEvent: {}
+[22.478400] (-) TimerEvent: {}
+[22.578760] (-) TimerEvent: {}
+[22.679096] (-) TimerEvent: {}
+[22.779464] (-) TimerEvent: {}
+[22.879807] (-) TimerEvent: {}
+[22.980131] (-) TimerEvent: {}
+[23.080516] (-) TimerEvent: {}
+[23.180841] (-) TimerEvent: {}
+[23.281227] (-) TimerEvent: {}
+[23.381589] (-) TimerEvent: {}
+[23.481917] (-) TimerEvent: {}
+[23.582345] (-) TimerEvent: {}
+[23.682659] (-) TimerEvent: {}
+[23.783044] (-) TimerEvent: {}
+[23.851735] (vio_slam_bridge) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable vio_node\x1b[0m\n'}
+[23.883170] (-) TimerEvent: {}
+[23.983567] (-) TimerEvent: {}
+[24.083895] (-) TimerEvent: {}
+[24.184257] (-) TimerEvent: {}
+[24.284815] (-) TimerEvent: {}
+[24.385147] (-) TimerEvent: {}
+[24.485627] (-) TimerEvent: {}
+[24.585953] (-) TimerEvent: {}
+[24.686406] (-) TimerEvent: {}
+[24.786797] (-) TimerEvent: {}
+[24.887179] (-) TimerEvent: {}
+[24.987551] (-) TimerEvent: {}
+[25.087916] (-) TimerEvent: {}
+[25.188272] (-) TimerEvent: {}
+[25.288692] (-) TimerEvent: {}
+[25.321358] (vio_slam_bridge) StdoutLine: {'line': b'[100%] Built target vio_node\n'}
+[25.336961] (vio_slam_bridge) CommandEnded: {'returncode': 0}
+[25.339002] (vio_slam_bridge) JobProgress: {'identifier': 'vio_slam_bridge', 'progress': 'install'}
+[25.349614] (vio_slam_bridge) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/huyen/drone_project/ros2_ws/build/vio_slam_bridge'], 'cwd': '/home/huyen/drone_project/ros2_ws/build/vio_slam_bridge', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'huyen'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/huyen'), ('OLDPWD', '/home/huyen/drone_project/ros2_ws'), ('ROS_PYTHON_VERSION', '3'), ('PS1', '\\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/huyen/drone_project/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'huyen'), ('NAME', 'HUYEN'), ('WSL_INTEROP', '/run/WSL/2082_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/huyen/.local/bin:/home/huyen/.local/bin:/home/huyen/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/iverilog/bin:/mnt/c/iverilog/gtkwave/bin:/mnt/c/altera_lite/25.1std/quartus/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files/MySQL/MySQL Shell 8.0/bin/:/mnt/c/Users/trant/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/trant/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/trant/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/trant/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/src/flutter/bin:/mnt/c/altera_lite/25.1std/questa_fse/win64:/snap/bin:/opt/xtensa-esp-elf/bin/:/opt/xtensa-esp-elf/bin/'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/huyen/drone_project/ros2_ws/install/uav_cloud_bridge:/home/huyen/drone_project/ros2_ws/install/precision_landing:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/huyen/drone_project/ros2_ws/build/vio_slam_bridge'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/huyen/drone_project/ros2_ws/install/uav_cloud_bridge/lib/python3.10/site-packages:/home/huyen/drone_project/ros2_ws/install/precision_landing/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/home/huyen/drone_project/ros2_ws/install/uav_cloud_bridge:/home/huyen/drone_project/ros2_ws/install/precision_landing:/opt/ros/humble')]), 'shell': False}
+[25.357195] (vio_slam_bridge) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[25.358554] (vio_slam_bridge) StdoutLine: {'line': b'-- Installing: /home/huyen/drone_project/ros2_ws/install/vio_slam_bridge/lib/vio_slam_bridge/vio_node\n'}
+[25.360662] (vio_slam_bridge) StdoutLine: {'line': b'-- Set runtime path of "/home/huyen/drone_project/ros2_ws/install/vio_slam_bridge/lib/vio_slam_bridge/vio_node" to ""\n'}
+[25.361805] (vio_slam_bridge) StdoutLine: {'line': b'-- Installing: /home/huyen/drone_project/ros2_ws/install/vio_slam_bridge/share/ament_index/resource_index/package_run_dependencies/vio_slam_bridge\n'}
+[25.362465] (vio_slam_bridge) StdoutLine: {'line': b'-- Installing: /home/huyen/drone_project/ros2_ws/install/vio_slam_bridge/share/ament_index/resource_index/parent_prefix_path/vio_slam_bridge\n'}
+[25.363033] (vio_slam_bridge) StdoutLine: {'line': b'-- Installing: /home/huyen/drone_project/ros2_ws/install/vio_slam_bridge/share/vio_slam_bridge/environment/ament_prefix_path.sh\n'}
+[25.363406] (vio_slam_bridge) StdoutLine: {'line': b'-- Installing: /home/huyen/drone_project/ros2_ws/install/vio_slam_bridge/share/vio_slam_bridge/environment/ament_prefix_path.dsv\n'}
+[25.363679] (vio_slam_bridge) StdoutLine: {'line': b'-- Installing: /home/huyen/drone_project/ros2_ws/install/vio_slam_bridge/share/vio_slam_bridge/environment/path.sh\n'}
+[25.364011] (vio_slam_bridge) StdoutLine: {'line': b'-- Installing: /home/huyen/drone_project/ros2_ws/install/vio_slam_bridge/share/vio_slam_bridge/environment/path.dsv\n'}
+[25.364307] (vio_slam_bridge) StdoutLine: {'line': b'-- Installing: /home/huyen/drone_project/ros2_ws/install/vio_slam_bridge/share/vio_slam_bridge/local_setup.bash\n'}
+[25.364620] (vio_slam_bridge) StdoutLine: {'line': b'-- Installing: /home/huyen/drone_project/ros2_ws/install/vio_slam_bridge/share/vio_slam_bridge/local_setup.sh\n'}
+[25.364929] (vio_slam_bridge) StdoutLine: {'line': b'-- Installing: /home/huyen/drone_project/ros2_ws/install/vio_slam_bridge/share/vio_slam_bridge/local_setup.zsh\n'}
+[25.365242] (vio_slam_bridge) StdoutLine: {'line': b'-- Installing: /home/huyen/drone_project/ros2_ws/install/vio_slam_bridge/share/vio_slam_bridge/local_setup.dsv\n'}
+[25.365332] (vio_slam_bridge) StdoutLine: {'line': b'-- Installing: /home/huyen/drone_project/ros2_ws/install/vio_slam_bridge/share/vio_slam_bridge/package.dsv\n'}
+[25.365835] (vio_slam_bridge) StdoutLine: {'line': b'-- Installing: /home/huyen/drone_project/ros2_ws/install/vio_slam_bridge/share/ament_index/resource_index/packages/vio_slam_bridge\n'}
+[25.367781] (vio_slam_bridge) StdoutLine: {'line': b'-- Installing: /home/huyen/drone_project/ros2_ws/install/vio_slam_bridge/share/vio_slam_bridge/cmake/vio_slam_bridgeConfig.cmake\n'}
+[25.370156] (vio_slam_bridge) StdoutLine: {'line': b'-- Installing: /home/huyen/drone_project/ros2_ws/install/vio_slam_bridge/share/vio_slam_bridge/cmake/vio_slam_bridgeConfig-version.cmake\n'}
+[25.370547] (vio_slam_bridge) StdoutLine: {'line': b'-- Installing: /home/huyen/drone_project/ros2_ws/install/vio_slam_bridge/share/vio_slam_bridge/package.xml\n'}
+[25.374192] (vio_slam_bridge) CommandEnded: {'returncode': 0}
+[25.389224] (-) TimerEvent: {}
+[25.401268] (vio_slam_bridge) JobEnded: {'identifier': 'vio_slam_bridge', 'rc': 0}
+[25.403254] (-) EventReactorShutdown: {}

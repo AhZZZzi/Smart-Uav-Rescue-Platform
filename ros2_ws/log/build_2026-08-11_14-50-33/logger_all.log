@@ -1,0 +1,166 @@
+[1.413s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'precision_landing']
+[1.413s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['precision_landing'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7ab097468f40>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7ab09756a620>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7ab09756a620>>)
+[3.361s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[3.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[3.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[3.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[3.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[3.363s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[3.363s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/huyen/drone_project/ros2_ws'
+[3.363s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[3.364s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[3.364s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[3.364s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[3.365s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[3.365s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[3.365s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[3.365s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[3.365s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[3.443s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[3.445s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[3.445s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[3.446s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[3.446s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[3.447s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[3.448s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[3.448s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[3.448s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[3.449s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[3.449s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[3.449s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[3.449s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[3.449s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[3.450s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extensions ['ignore', 'ignore_ament_install']
+[3.450s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extension 'ignore'
+[3.450s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extension 'ignore_ament_install'
+[3.451s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extensions ['colcon_pkg']
+[3.451s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extension 'colcon_pkg'
+[3.451s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extensions ['colcon_meta']
+[3.451s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extension 'colcon_meta'
+[3.451s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extensions ['ros']
+[3.451s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extension 'ros'
+[3.451s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extensions ['cmake', 'python']
+[3.452s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extension 'cmake'
+[3.452s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extension 'python'
+[3.452s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extensions ['python_setup_py']
+[3.452s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extension 'python_setup_py'
+[3.452s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[3.453s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[3.455s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[3.455s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[3.455s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[3.456s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[3.456s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[3.456s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[3.457s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[3.457s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[3.458s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[3.458s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[3.458s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[3.459s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[3.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/precision_landing) by extensions ['ignore', 'ignore_ament_install']
+[3.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/precision_landing) by extension 'ignore'
+[3.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/precision_landing) by extension 'ignore_ament_install'
+[3.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/precision_landing) by extensions ['colcon_pkg']
+[3.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/precision_landing) by extension 'colcon_pkg'
+[3.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/precision_landing) by extensions ['colcon_meta']
+[3.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/precision_landing) by extension 'colcon_meta'
+[3.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/precision_landing) by extensions ['ros']
+[3.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/precision_landing) by extension 'ros'
+[3.477s] DEBUG:colcon.colcon_core.package_identification:Package 'src/precision_landing' with type 'ros.ament_python' and name 'precision_landing'
+[3.478s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_cloud_bridge) by extensions ['ignore', 'ignore_ament_install']
+[3.478s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_cloud_bridge) by extension 'ignore'
+[3.478s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_cloud_bridge) by extension 'ignore_ament_install'
+[3.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_cloud_bridge) by extensions ['colcon_pkg']
+[3.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_cloud_bridge) by extension 'colcon_pkg'
+[3.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_cloud_bridge) by extensions ['colcon_meta']
+[3.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_cloud_bridge) by extension 'colcon_meta'
+[3.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_cloud_bridge) by extensions ['ros']
+[3.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_cloud_bridge) by extension 'ros'
+[3.484s] DEBUG:colcon.colcon_core.package_identification:Package 'src/uav_cloud_bridge' with type 'ros.ament_python' and name 'uav_cloud_bridge'
+[3.484s] Level 1:colcon.colcon_core.package_identification:_identify(src/vio_slam_bridge) by extensions ['ignore', 'ignore_ament_install']
+[3.484s] Level 1:colcon.colcon_core.package_identification:_identify(src/vio_slam_bridge) by extension 'ignore'
+[3.485s] Level 1:colcon.colcon_core.package_identification:_identify(src/vio_slam_bridge) by extension 'ignore_ament_install'
+[3.485s] Level 1:colcon.colcon_core.package_identification:_identify(src/vio_slam_bridge) by extensions ['colcon_pkg']
+[3.485s] Level 1:colcon.colcon_core.package_identification:_identify(src/vio_slam_bridge) by extension 'colcon_pkg'
+[3.485s] Level 1:colcon.colcon_core.package_identification:_identify(src/vio_slam_bridge) by extensions ['colcon_meta']
+[3.486s] Level 1:colcon.colcon_core.package_identification:_identify(src/vio_slam_bridge) by extension 'colcon_meta'
+[3.486s] Level 1:colcon.colcon_core.package_identification:_identify(src/vio_slam_bridge) by extensions ['ros']
+[3.486s] Level 1:colcon.colcon_core.package_identification:_identify(src/vio_slam_bridge) by extension 'ros'
+[3.491s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vio_slam_bridge' with type 'ros.ament_cmake' and name 'vio_slam_bridge'
+[3.492s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[3.492s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[3.493s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[3.493s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[3.493s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[3.677s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'uav_cloud_bridge' in 'src/uav_cloud_bridge'
+[3.678s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'vio_slam_bridge' in 'src/vio_slam_bridge'
+[3.682s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[3.682s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[3.695s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/huyen/drone_project/ros2_ws/install
+[3.704s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 280 installed packages in /opt/ros/humble
+[3.716s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[4.135s] Level 5:colcon.colcon_core.verb:set package 'precision_landing' build argument 'cmake_args' from command line to 'None'
+[4.135s] Level 5:colcon.colcon_core.verb:set package 'precision_landing' build argument 'cmake_target' from command line to 'None'
+[4.136s] Level 5:colcon.colcon_core.verb:set package 'precision_landing' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.136s] Level 5:colcon.colcon_core.verb:set package 'precision_landing' build argument 'cmake_clean_cache' from command line to 'False'
+[4.136s] Level 5:colcon.colcon_core.verb:set package 'precision_landing' build argument 'cmake_clean_first' from command line to 'False'
+[4.137s] Level 5:colcon.colcon_core.verb:set package 'precision_landing' build argument 'cmake_force_configure' from command line to 'False'
+[4.137s] Level 5:colcon.colcon_core.verb:set package 'precision_landing' build argument 'ament_cmake_args' from command line to 'None'
+[4.137s] Level 5:colcon.colcon_core.verb:set package 'precision_landing' build argument 'catkin_cmake_args' from command line to 'None'
+[4.139s] Level 5:colcon.colcon_core.verb:set package 'precision_landing' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.139s] DEBUG:colcon.colcon_core.verb:Building package 'precision_landing' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/huyen/drone_project/ros2_ws/build/precision_landing', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/huyen/drone_project/ros2_ws/install/precision_landing', 'merge_install': False, 'path': '/home/huyen/drone_project/ros2_ws/src/precision_landing', 'symlink_install': False, 'test_result_base': None}
+[4.140s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[4.150s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[4.151s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/huyen/drone_project/ros2_ws/src/precision_landing' with build type 'ament_python'
+[4.155s] Level 1:colcon.colcon_core.shell:create_environment_hook('precision_landing', 'ament_prefix_path')
+[4.181s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[4.182s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/huyen/drone_project/ros2_ws/install/precision_landing/share/precision_landing/hook/ament_prefix_path.ps1'
+[4.188s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/huyen/drone_project/ros2_ws/install/precision_landing/share/precision_landing/hook/ament_prefix_path.dsv'
+[4.191s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/huyen/drone_project/ros2_ws/install/precision_landing/share/precision_landing/hook/ament_prefix_path.sh'
+[4.199s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.200s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.172s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/huyen/drone_project/ros2_ws/src/precision_landing'
+[6.173s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.173s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.125s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: update_catalog, easy_install, setopt, install_data, register, install_lib, rotate, clean, build_scripts, symlink_data, test, install_egg_info, build_py, alias, sdist, bdist_dumb, check, build_ext, build, install, bdist_egg, upload, init_catalog, install_scripts, develop, compile_catalog, bdist, dist_info, build_clib, saveopts, extract_messages, bdist_wheel, egg_info, bdist_rpm, upload_docs, install_headers
+[8.149s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/huyen/drone_project/ros2_ws/src/precision_landing': PYTHONPATH=/home/huyen/drone_project/ros2_ws/build/precision_landing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/huyen/drone_project/ros2_ws/install/precision_landing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/precision_landing build --build-base /home/huyen/drone_project/ros2_ws/build/precision_landing/build install --record /home/huyen/drone_project/ros2_ws/build/precision_landing/install.log --install-scripts $base/lib/precision_landing --single-version-externally-managed install_data
+[10.049s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/huyen/drone_project/ros2_ws/src/precision_landing' returned '0': PYTHONPATH=/home/huyen/drone_project/ros2_ws/build/precision_landing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/huyen/drone_project/ros2_ws/install/precision_landing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/precision_landing build --build-base /home/huyen/drone_project/ros2_ws/build/precision_landing/build install --record /home/huyen/drone_project/ros2_ws/build/precision_landing/install.log --install-scripts $base/lib/precision_landing --single-version-externally-managed install_data
+[10.055s] Level 1:colcon.colcon_core.environment:checking '/home/huyen/drone_project/ros2_ws/install/precision_landing' for CMake module files
+[10.057s] Level 1:colcon.colcon_core.environment:checking '/home/huyen/drone_project/ros2_ws/install/precision_landing' for CMake config files
+[10.061s] Level 1:colcon.colcon_core.environment:checking '/home/huyen/drone_project/ros2_ws/install/precision_landing/lib'
+[10.062s] Level 1:colcon.colcon_core.environment:checking '/home/huyen/drone_project/ros2_ws/install/precision_landing/bin'
+[10.063s] Level 1:colcon.colcon_core.environment:checking '/home/huyen/drone_project/ros2_ws/install/precision_landing/lib/pkgconfig/precision_landing.pc'
+[10.064s] Level 1:colcon.colcon_core.environment:checking '/home/huyen/drone_project/ros2_ws/install/precision_landing/lib/python3.10/site-packages'
+[10.064s] Level 1:colcon.colcon_core.shell:create_environment_hook('precision_landing', 'pythonpath')
+[10.066s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/huyen/drone_project/ros2_ws/install/precision_landing/share/precision_landing/hook/pythonpath.ps1'
+[10.071s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/huyen/drone_project/ros2_ws/install/precision_landing/share/precision_landing/hook/pythonpath.dsv'
+[10.073s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/huyen/drone_project/ros2_ws/install/precision_landing/share/precision_landing/hook/pythonpath.sh'
+[10.077s] Level 1:colcon.colcon_core.environment:checking '/home/huyen/drone_project/ros2_ws/install/precision_landing/bin'
+[10.077s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(precision_landing)
+[10.079s] INFO:colcon.colcon_core.shell:Creating package script '/home/huyen/drone_project/ros2_ws/install/precision_landing/share/precision_landing/package.ps1'
+[10.086s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/huyen/drone_project/ros2_ws/install/precision_landing/share/precision_landing/package.dsv'
+[10.093s] INFO:colcon.colcon_core.shell:Creating package script '/home/huyen/drone_project/ros2_ws/install/precision_landing/share/precision_landing/package.sh'
+[10.097s] INFO:colcon.colcon_core.shell:Creating package script '/home/huyen/drone_project/ros2_ws/install/precision_landing/share/precision_landing/package.bash'
+[10.105s] INFO:colcon.colcon_core.shell:Creating package script '/home/huyen/drone_project/ros2_ws/install/precision_landing/share/precision_landing/package.zsh'
+[10.116s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/huyen/drone_project/ros2_ws/install/precision_landing/share/colcon-core/packages/precision_landing)
+[10.122s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[10.122s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[10.123s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[10.123s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[10.435s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[10.435s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[10.436s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[10.436s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[10.437s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[10.438s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[10.441s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/huyen/drone_project/ros2_ws/install/local_setup.ps1'
+[10.449s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/huyen/drone_project/ros2_ws/install/_local_setup_util_ps1.py'
+[10.458s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/huyen/drone_project/ros2_ws/install/setup.ps1'
+[10.466s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/huyen/drone_project/ros2_ws/install/local_setup.sh'
+[10.471s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/huyen/drone_project/ros2_ws/install/_local_setup_util_sh.py'
+[10.478s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/huyen/drone_project/ros2_ws/install/setup.sh'
+[10.484s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/huyen/drone_project/ros2_ws/install/local_setup.bash'
+[10.488s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/huyen/drone_project/ros2_ws/install/setup.bash'
+[10.495s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/huyen/drone_project/ros2_ws/install/local_setup.zsh'
+[10.502s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/huyen/drone_project/ros2_ws/install/setup.zsh'

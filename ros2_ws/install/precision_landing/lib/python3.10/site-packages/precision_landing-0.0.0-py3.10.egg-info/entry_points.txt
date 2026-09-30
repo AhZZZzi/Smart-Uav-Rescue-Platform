@@ -1,0 +1,9 @@
+[console_scripts]
+aruco_detector_node = precision_landing.aruco_detector_node:main
+camera_reader_node = precision_landing.camera_reader_node:main
+gps_vio_switching_node = precision_landing.gps_vio_switching_node:main
+landing_controller_node = precision_landing.landing_controller_node:main
+lora_ground_station_mock = precision_landing.lora_ground_station_mock:main
+lora_protocol_node = precision_landing.lora_protocol_node:main
+mock_marker_publisher = precision_landing.mock_marker_publisher:main
+

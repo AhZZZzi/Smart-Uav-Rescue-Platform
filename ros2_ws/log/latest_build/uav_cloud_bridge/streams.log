@@ -1,0 +1,24 @@
+[0.714s] Invoking command in '/home/huyen/drone_project/ros2_ws/src/uav_cloud_bridge': PYTHONPATH=/home/huyen/drone_project/ros2_ws/build/uav_cloud_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/huyen/drone_project/ros2_ws/install/uav_cloud_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/uav_cloud_bridge build --build-base /home/huyen/drone_project/ros2_ws/build/uav_cloud_bridge/build install --record /home/huyen/drone_project/ros2_ws/build/uav_cloud_bridge/install.log --install-scripts $base/lib/uav_cloud_bridge --single-version-externally-managed install_data
+[0.987s] running egg_info
+[0.988s] writing ../../build/uav_cloud_bridge/uav_cloud_bridge.egg-info/PKG-INFO
+[0.989s] writing dependency_links to ../../build/uav_cloud_bridge/uav_cloud_bridge.egg-info/dependency_links.txt
+[0.990s] writing entry points to ../../build/uav_cloud_bridge/uav_cloud_bridge.egg-info/entry_points.txt
+[0.990s] writing requirements to ../../build/uav_cloud_bridge/uav_cloud_bridge.egg-info/requires.txt
+[0.990s] writing top-level names to ../../build/uav_cloud_bridge/uav_cloud_bridge.egg-info/top_level.txt
+[0.994s] reading manifest file '../../build/uav_cloud_bridge/uav_cloud_bridge.egg-info/SOURCES.txt'
+[0.995s] writing manifest file '../../build/uav_cloud_bridge/uav_cloud_bridge.egg-info/SOURCES.txt'
+[0.995s] running build
+[0.995s] running build_py
+[0.997s] copying uav_cloud_bridge/bridge_node.py -> /home/huyen/drone_project/ros2_ws/build/uav_cloud_bridge/build/lib/uav_cloud_bridge
+[0.997s] running install
+[0.998s] running install_lib
+[0.999s] copying /home/huyen/drone_project/ros2_ws/build/uav_cloud_bridge/build/lib/uav_cloud_bridge/bridge_node.py -> /home/huyen/drone_project/ros2_ws/install/uav_cloud_bridge/lib/python3.10/site-packages/uav_cloud_bridge
+[1.000s] byte-compiling /home/huyen/drone_project/ros2_ws/install/uav_cloud_bridge/lib/python3.10/site-packages/uav_cloud_bridge/bridge_node.py to bridge_node.cpython-310.pyc
+[1.003s] running install_data
+[1.004s] running install_egg_info
+[1.006s] removing '/home/huyen/drone_project/ros2_ws/install/uav_cloud_bridge/lib/python3.10/site-packages/uav_cloud_bridge-0.0.0-py3.10.egg-info' (and everything under it)
+[1.007s] Copying ../../build/uav_cloud_bridge/uav_cloud_bridge.egg-info to /home/huyen/drone_project/ros2_ws/install/uav_cloud_bridge/lib/python3.10/site-packages/uav_cloud_bridge-0.0.0-py3.10.egg-info
+[1.010s] running install_scripts
+[1.033s] Installing bridge_node script to /home/huyen/drone_project/ros2_ws/install/uav_cloud_bridge/lib/uav_cloud_bridge
+[1.033s] writing list of installed files to '/home/huyen/drone_project/ros2_ws/build/uav_cloud_bridge/install.log'
+[1.061s] Invoked command in '/home/huyen/drone_project/ros2_ws/src/uav_cloud_bridge' returned '0': PYTHONPATH=/home/huyen/drone_project/ros2_ws/build/uav_cloud_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/huyen/drone_project/ros2_ws/install/uav_cloud_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/uav_cloud_bridge build --build-base /home/huyen/drone_project/ros2_ws/build/uav_cloud_bridge/build install --record /home/huyen/drone_project/ros2_ws/build/uav_cloud_bridge/install.log --install-scripts $base/lib/uav_cloud_bridge --single-version-externally-managed install_data

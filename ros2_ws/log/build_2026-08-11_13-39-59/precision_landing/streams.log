@@ -1,0 +1,25 @@
+[5.384s] Invoking command in '/home/huyen/drone_project/ros2_ws/src/precision_landing': PYTHONPATH=/home/huyen/drone_project/ros2_ws/build/precision_landing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/huyen/drone_project/ros2_ws/install/precision_landing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/precision_landing build --build-base /home/huyen/drone_project/ros2_ws/build/precision_landing/build install --record /home/huyen/drone_project/ros2_ws/build/precision_landing/install.log --install-scripts $base/lib/precision_landing --single-version-externally-managed install_data
+[6.796s] running egg_info
+[6.802s] writing ../../build/precision_landing/precision_landing.egg-info/PKG-INFO
+[6.803s] writing dependency_links to ../../build/precision_landing/precision_landing.egg-info/dependency_links.txt
+[6.803s] writing entry points to ../../build/precision_landing/precision_landing.egg-info/entry_points.txt
+[6.804s] writing requirements to ../../build/precision_landing/precision_landing.egg-info/requires.txt
+[6.804s] writing top-level names to ../../build/precision_landing/precision_landing.egg-info/top_level.txt
+[6.811s] reading manifest file '../../build/precision_landing/precision_landing.egg-info/SOURCES.txt'
+[6.816s] writing manifest file '../../build/precision_landing/precision_landing.egg-info/SOURCES.txt'
+[6.819s] running build
+[6.819s] running build_py
+[6.823s] running install
+[6.823s] running install_lib
+[6.831s] running install_data
+[6.832s] running install_egg_info
+[6.838s] removing '/home/huyen/drone_project/ros2_ws/install/precision_landing/lib/python3.10/site-packages/precision_landing-0.0.0-py3.10.egg-info' (and everything under it)
+[6.840s] Copying ../../build/precision_landing/precision_landing.egg-info to /home/huyen/drone_project/ros2_ws/install/precision_landing/lib/python3.10/site-packages/precision_landing-0.0.0-py3.10.egg-info
+[6.845s] running install_scripts
+[6.950s] Installing aruco_detector_node script to /home/huyen/drone_project/ros2_ws/install/precision_landing/lib/precision_landing
+[6.953s] Installing camera_reader_node script to /home/huyen/drone_project/ros2_ws/install/precision_landing/lib/precision_landing
+[6.955s] Installing gps_vio_switching_node script to /home/huyen/drone_project/ros2_ws/install/precision_landing/lib/precision_landing
+[6.956s] Installing landing_controller_node script to /home/huyen/drone_project/ros2_ws/install/precision_landing/lib/precision_landing
+[6.957s] Installing mock_marker_publisher script to /home/huyen/drone_project/ros2_ws/install/precision_landing/lib/precision_landing
+[6.957s] writing list of installed files to '/home/huyen/drone_project/ros2_ws/build/precision_landing/install.log'
+[7.079s] Invoked command in '/home/huyen/drone_project/ros2_ws/src/precision_landing' returned '0': PYTHONPATH=/home/huyen/drone_project/ros2_ws/build/precision_landing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/huyen/drone_project/ros2_ws/install/precision_landing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/precision_landing build --build-base /home/huyen/drone_project/ros2_ws/build/precision_landing/build install --record /home/huyen/drone_project/ros2_ws/build/precision_landing/install.log --install-scripts $base/lib/precision_landing --single-version-externally-managed install_data

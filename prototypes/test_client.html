@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Rescue app - connection test</title>
+  <style>
+    body { font-family: sans-serif; max-width: 500px; margin: 40px auto; }
+    #log { border: 1px solid #ccc; height: 220px; overflow-y: auto; padding: 8px; font-family: monospace; font-size: 13px; }
+    button { padding: 8px 16px; margin-top: 10px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h2>UAV rescue - connection test</h2>
+  <p>Status: <span id="status">connecting...</span></p>
+  <div id="log"></div>
+  <button id="sendBtn">Send test rescue request</button>
+
+  <script>
+    // Change this to your deployed relay's URL once you move off localhost,
+    // e.g. "wss://your-relay.onrender.com/ws/app"
+    const RELAY_URL = "ws://localhost:8000/ws/app";
+
+    const log = document.getElementById("log");
+    const status = document.getElementById("status");
+
+    function addLog(text) {
+      const line = document.createElement("div");
+      line.textContent = text;
+      log.appendChild(line);
+      log.scrollTop = log.scrollHeight;
+    }
+
+    const ws = new WebSocket(RELAY_URL);
+
+    ws.onopen = () => { status.textContent = "connected"; addLog("Connected to relay."); };
+    ws.onclose = () => { status.textContent = "disconnected"; addLog("Disconnected from relay."); };
+    ws.onerror = (e) => { addLog("Error connecting to relay."); };
+
+    ws.onmessage = (event) => {
+      const data = JSON.parse(event.data);
+      addLog("Telemetry: " + JSON.stringify(data));
+    };
+
+    document.getElementById("sendBtn").onclick = () => {
+      const rescueRequest = {
+        type: "rescue_request",
+        lat: 10.762622,
+        lon: 106.660172,
+        notes: "Test request from web app",
+      };
+      ws.send(JSON.stringify(rescueRequest));
+      addLog("Sent: " + JSON.stringify(rescueRequest));
+    };
+  </script>
+</body>
+</html>

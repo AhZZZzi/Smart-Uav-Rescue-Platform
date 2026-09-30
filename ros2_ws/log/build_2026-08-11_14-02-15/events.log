@@ -1,0 +1,69 @@
+[0.000000] (-) TimerEvent: {}
+[0.000320] (-) JobUnselected: {'identifier': 'uav_cloud_bridge'}
+[0.000395] (-) JobUnselected: {'identifier': 'vio_slam_bridge'}
+[0.000453] (precision_landing) JobQueued: {'identifier': 'precision_landing', 'dependencies': OrderedDict()}
+[0.000511] (precision_landing) JobStarted: {'identifier': 'precision_landing'}
+[0.097418] (-) TimerEvent: {}
+[0.198089] (-) TimerEvent: {}
+[0.298744] (-) TimerEvent: {}
+[0.399351] (-) TimerEvent: {}
+[0.499939] (-) TimerEvent: {}
+[0.601209] (-) TimerEvent: {}
+[0.702126] (-) TimerEvent: {}
+[0.805262] (-) TimerEvent: {}
+[0.905836] (-) TimerEvent: {}
+[1.006485] (-) TimerEvent: {}
+[1.108484] (-) TimerEvent: {}
+[1.209191] (-) TimerEvent: {}
+[1.309933] (-) TimerEvent: {}
+[1.410945] (-) TimerEvent: {}
+[1.511537] (-) TimerEvent: {}
+[1.614041] (-) TimerEvent: {}
+[1.714659] (-) TimerEvent: {}
+[1.815137] (-) TimerEvent: {}
+[1.915739] (-) TimerEvent: {}
+[2.016262] (-) TimerEvent: {}
+[2.116865] (-) TimerEvent: {}
+[2.217514] (-) TimerEvent: {}
+[2.268753] (precision_landing) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/precision_landing', 'build', '--build-base', '/home/huyen/drone_project/ros2_ws/build/precision_landing/build', 'install', '--record', '/home/huyen/drone_project/ros2_ws/build/precision_landing/install.log', '--install-scripts', '$base/lib/precision_landing', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/huyen/drone_project/ros2_ws/src/precision_landing', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'huyen', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/huyen/vio_slam/ORB_SLAM3/lib', 'WT_PROFILE_ID': '{0caa0dad-35be-5f56-a8ff-afceeeaa6101}', 'HOME': '/home/huyen', 'OLDPWD': '/home/huyen/drone_project/ros2_ws', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/huyen/drone_project/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'huyen', 'NAME': 'HUYEN', 'WSL_INTEROP': '/run/WSL/10402_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/huyen/.local/bin:/home/huyen/.local/bin:/home/huyen/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/iverilog/bin:/mnt/c/iverilog/gtkwave/bin:/mnt/c/altera_lite/25.1std/quartus/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/MySQL/MySQL Shell 8.0/bin/:/mnt/c/Users/trant/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/trant/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/trant/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/trant/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/src/flutter/bin:/mnt/c/altera_lite/25.1std/questa_fse/win64:/snap/bin:/opt/xtensa-esp-elf/bin/:/opt/xtensa-esp-elf/bin/', 'WT_SESSION': '6be2686d-0296-4280-bc66-51113d693a38', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/huyen/drone_project/ros2_ws/install/vio_slam_bridge:/home/huyen/drone_project/ros2_ws/install/uav_cloud_bridge:/home/huyen/drone_project/ros2_ws/install/precision_landing:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/huyen/drone_project/ros2_ws/build/precision_landing', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/huyen/drone_project/ros2_ws/build/precision_landing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/huyen/drone_project/ros2_ws/install/precision_landing/lib/python3.10/site-packages:/home/huyen/drone_project/ros2_ws/install/uav_cloud_bridge/lib/python3.10/site-packages:/home/huyen/drone_project/ros2_ws/install/precision_landing/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/huyen/drone_project/ros2_ws/install/vio_slam_bridge', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:'}, 'shell': False}
+[2.317880] (-) TimerEvent: {}
+[2.418890] (-) TimerEvent: {}
+[2.519564] (-) TimerEvent: {}
+[2.625248] (-) TimerEvent: {}
+[2.725929] (-) TimerEvent: {}
+[2.826547] (-) TimerEvent: {}
+[2.927146] (-) TimerEvent: {}
+[3.027765] (-) TimerEvent: {}
+[3.128395] (-) TimerEvent: {}
+[3.205948] (precision_landing) StdoutLine: {'line': b'running egg_info\n'}
+[3.208571] (precision_landing) StdoutLine: {'line': b'writing ../../build/precision_landing/precision_landing.egg-info/PKG-INFO\n'}
+[3.214161] (precision_landing) StdoutLine: {'line': b'writing dependency_links to ../../build/precision_landing/precision_landing.egg-info/dependency_links.txt\n'}
+[3.214575] (precision_landing) StdoutLine: {'line': b'writing entry points to ../../build/precision_landing/precision_landing.egg-info/entry_points.txt\n'}
+[3.214739] (precision_landing) StdoutLine: {'line': b'writing requirements to ../../build/precision_landing/precision_landing.egg-info/requires.txt\n'}
+[3.214951] (precision_landing) StdoutLine: {'line': b'writing top-level names to ../../build/precision_landing/precision_landing.egg-info/top_level.txt\n'}
+[3.218885] (precision_landing) StdoutLine: {'line': b"reading manifest file '../../build/precision_landing/precision_landing.egg-info/SOURCES.txt'\n"}
+[3.221310] (precision_landing) StdoutLine: {'line': b"writing manifest file '../../build/precision_landing/precision_landing.egg-info/SOURCES.txt'\n"}
+[3.227120] (precision_landing) StdoutLine: {'line': b'running build\n'}
+[3.227409] (precision_landing) StdoutLine: {'line': b'running build_py\n'}
+[3.228827] (-) TimerEvent: {}
+[3.229074] (precision_landing) StdoutLine: {'line': b'copying precision_landing/gps_vio_switching_node.py -> /home/huyen/drone_project/ros2_ws/build/precision_landing/build/lib/precision_landing\n'}
+[3.229289] (precision_landing) StdoutLine: {'line': b'running install\n'}
+[3.229519] (precision_landing) StdoutLine: {'line': b'running install_lib\n'}
+[3.229847] (precision_landing) StdoutLine: {'line': b'copying /home/huyen/drone_project/ros2_ws/build/precision_landing/build/lib/precision_landing/gps_vio_switching_node.py -> /home/huyen/drone_project/ros2_ws/install/precision_landing/lib/python3.10/site-packages/precision_landing\n'}
+[3.231100] (precision_landing) StdoutLine: {'line': b'byte-compiling /home/huyen/drone_project/ros2_ws/install/precision_landing/lib/python3.10/site-packages/precision_landing/gps_vio_switching_node.py to gps_vio_switching_node.cpython-310.pyc\n'}
+[3.236091] (precision_landing) StdoutLine: {'line': b'running install_data\n'}
+[3.236676] (precision_landing) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.245600] (precision_landing) StdoutLine: {'line': b"removing '/home/huyen/drone_project/ros2_ws/install/precision_landing/lib/python3.10/site-packages/precision_landing-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[3.247295] (precision_landing) StdoutLine: {'line': b'Copying ../../build/precision_landing/precision_landing.egg-info to /home/huyen/drone_project/ros2_ws/install/precision_landing/lib/python3.10/site-packages/precision_landing-0.0.0-py3.10.egg-info\n'}
+[3.251452] (precision_landing) StdoutLine: {'line': b'running install_scripts\n'}
+[3.329037] (-) TimerEvent: {}
+[3.330894] (precision_landing) StdoutLine: {'line': b'Installing aruco_detector_node script to /home/huyen/drone_project/ros2_ws/install/precision_landing/lib/precision_landing\n'}
+[3.332019] (precision_landing) StdoutLine: {'line': b'Installing camera_reader_node script to /home/huyen/drone_project/ros2_ws/install/precision_landing/lib/precision_landing\n'}
+[3.332689] (precision_landing) StdoutLine: {'line': b'Installing gps_vio_switching_node script to /home/huyen/drone_project/ros2_ws/install/precision_landing/lib/precision_landing\n'}
+[3.333395] (precision_landing) StdoutLine: {'line': b'Installing landing_controller_node script to /home/huyen/drone_project/ros2_ws/install/precision_landing/lib/precision_landing\n'}
+[3.333746] (precision_landing) StdoutLine: {'line': b'Installing mock_marker_publisher script to /home/huyen/drone_project/ros2_ws/install/precision_landing/lib/precision_landing\n'}
+[3.335645] (precision_landing) StdoutLine: {'line': b"writing list of installed files to '/home/huyen/drone_project/ros2_ws/build/precision_landing/install.log'\n"}
+[3.412865] (precision_landing) CommandEnded: {'returncode': 0}
+[3.431932] (-) TimerEvent: {}
+[3.456342] (precision_landing) JobEnded: {'identifier': 'precision_landing', 'rc': 0}
+[3.459894] (-) EventReactorShutdown: {}

@@ -1,0 +1,542 @@
+[0.016s] Invoking command in '/home/huyen/drone_project/ros2_ws/build/vio_slam_bridge': CMAKE_PREFIX_PATH=/home/huyen/drone_project/ros2_ws/install/uav_cloud_bridge:/home/huyen/drone_project/ros2_ws/install/precision_landing:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/huyen/drone_project/ros2_ws/build/vio_slam_bridge -- -j6 -l6
+[0.046s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.181s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.338s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.341s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.347s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.357s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.371s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.405s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.406s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[5.799s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.850s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[5.862s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[5.942s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindOpenGL.cmake:315 (message):
+[5.942s]   Policy CMP0072 is not set: FindOpenGL prefers GLVND by default when
+[5.942s]   available.  Run "cmake --help-policy CMP0072" for policy details.  Use the
+[5.942s]   cmake_policy command to set the policy and suppress this warning.
+[5.942s] 
+[5.942s]   FindOpenGL found both a legacy GL library:
+[5.942s] 
+[5.942s]     OPENGL_gl_LIBRARY: /usr/lib/x86_64-linux-gnu/libGL.so
+[5.942s] 
+[5.942s]   and GLVND libraries for OpenGL and GLX:
+[5.942s] 
+[5.942s]     OPENGL_opengl_LIBRARY: /usr/lib/x86_64-linux-gnu/libOpenGL.so
+[5.942s]     OPENGL_glx_LIBRARY: /usr/lib/x86_64-linux-gnu/libGLX.so
+[5.942s] 
+[5.942s]   OpenGL_GL_PREFERENCE has not been set to "GLVND" or "LEGACY", so for
+[5.942s]   compatibility with CMake 3.10 and below the legacy GL library will be used.
+[5.942s] Call Stack (most recent call first):
+[5.942s]   CMakeLists.txt:18 (find_package)
+[5.943s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[5.943s] [0m
+[5.996s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL 
+[6.067s] -- Configuring done
+[6.093s] -- Generating done
+[6.098s] -- Build files have been written to: /home/huyen/drone_project/ros2_ws/build/vio_slam_bridge
+[6.129s] [35m[1mConsolidate compiler generated dependencies of target vio_node[0m
+[6.164s] [ 50%] [32mBuilding CXX object CMakeFiles/vio_node.dir/src/vio_node.cpp.o[0m
+[11.634s] In file included from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37[m[K,
+[11.635s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Converter.h:26[m[K,
+[11.635s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:33[m[K,
+[11.635s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[11.635s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[11.635s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[11.635s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23[m[K,
+[11.635s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26[m[K,
+[11.635s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31[m[K,
+[11.635s]                  from [01m[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9[m[K:
+[11.635s] [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[11.635s]    62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & [01;35m[KAlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+[11.635s]       |                                                                          [01;35m[K^~~~~~~~~~[m[K
+[11.635s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[11.635s]                  from [01m[K/usr/include/eigen3/Eigen/LU:11[m[K,
+[11.635s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12[m[K,
+[11.635s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7[m[K,
+[11.635s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7[m[K,
+[11.635s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:28[m[K,
+[11.635s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[11.636s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[11.636s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[11.636s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23[m[K,
+[11.636s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26[m[K,
+[11.636s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31[m[K,
+[11.636s]                  from [01m[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9[m[K:
+[11.636s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[11.636s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[11.636s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[11.660s] In file included from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[11.661s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Converter.h:26[m[K,
+[11.661s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:33[m[K,
+[11.661s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[11.661s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[11.661s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[11.661s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23[m[K,
+[11.661s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26[m[K,
+[11.661s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31[m[K,
+[11.661s]                  from [01m[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9[m[K:
+[11.661s] [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[11.661s]    59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & [01;35m[KAlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[11.661s]       |                                                                                  [01;35m[K^~~~~~~~~~[m[K
+[11.661s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[11.661s]                  from [01m[K/usr/include/eigen3/Eigen/LU:11[m[K,
+[11.661s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12[m[K,
+[11.661s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7[m[K,
+[11.661s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7[m[K,
+[11.662s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:28[m[K,
+[11.662s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[11.662s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[11.662s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[11.662s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23[m[K,
+[11.662s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26[m[K,
+[11.662s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31[m[K,
+[11.662s]                  from [01m[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9[m[K:
+[11.662s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[11.662s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[11.662s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[11.662s] In file included from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[11.662s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Converter.h:26[m[K,
+[11.662s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:33[m[K,
+[11.662s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[11.662s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[11.662s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[11.662s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23[m[K,
+[11.662s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26[m[K,
+[11.662s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31[m[K,
+[11.663s]                  from [01m[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9[m[K:
+[11.663s] [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[11.663s]    60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & [01;35m[KAlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[11.663s]       |                                                                                  [01;35m[K^~~~~~~~~~[m[K
+[11.663s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[11.663s]                  from [01m[K/usr/include/eigen3/Eigen/LU:11[m[K,
+[11.663s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12[m[K,
+[11.663s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7[m[K,
+[11.663s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7[m[K,
+[11.663s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:28[m[K,
+[11.663s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[11.663s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[11.663s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[11.663s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23[m[K,
+[11.663s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26[m[K,
+[11.663s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31[m[K,
+[11.663s]                  from [01m[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9[m[K:
+[11.663s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[11.663s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[11.663s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[12.158s] In file included from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37[m[K,
+[12.158s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Converter.h:26[m[K,
+[12.158s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:33[m[K,
+[12.158s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[12.159s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[12.159s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[12.159s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23[m[K,
+[12.159s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26[m[K,
+[12.159s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31[m[K,
+[12.159s]                  from [01m[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9[m[K:
+[12.159s] /home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘[01m[Kclass g2o::BaseVertex<3, Eigen::Matrix<double, 3, 1> >[m[K’:
+[12.159s] [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_sba.h:40:35:[m[K   required from here
+[12.159s] [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[12.159s]    62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+[12.159s]       |                                                                  [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[12.159s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[12.159s]                  from [01m[K/usr/include/eigen3/Eigen/LU:11[m[K,
+[12.159s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12[m[K,
+[12.159s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7[m[K,
+[12.159s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7[m[K,
+[12.159s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:28[m[K,
+[12.159s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[12.159s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[12.159s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[12.160s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23[m[K,
+[12.160s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26[m[K,
+[12.160s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31[m[K,
+[12.160s]                  from [01m[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9[m[K:
+[12.160s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[12.160s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[12.160s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[12.194s] In file included from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37[m[K,
+[12.194s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Converter.h:26[m[K,
+[12.194s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:33[m[K,
+[12.194s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[12.194s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[12.194s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[12.194s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23[m[K,
+[12.194s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26[m[K,
+[12.194s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31[m[K,
+[12.194s]                  from [01m[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9[m[K:
+[12.194s] /home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘[01m[Kclass g2o::BaseVertex<6, g2o::SE3Quat>[m[K’:
+[12.194s] [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:59:33:[m[K   required from here
+[12.194s] [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[12.194s]    62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+[12.194s]       |                                                                  [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[12.194s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[12.194s]                  from [01m[K/usr/include/eigen3/Eigen/LU:11[m[K,
+[12.194s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12[m[K,
+[12.195s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7[m[K,
+[12.195s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7[m[K,
+[12.195s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:28[m[K,
+[12.195s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[12.195s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[12.195s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[12.195s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23[m[K,
+[12.195s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26[m[K,
+[12.195s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31[m[K,
+[12.195s]                  from [01m[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9[m[K:
+[12.195s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[12.195s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[12.195s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[12.229s] In file included from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[12.229s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Converter.h:26[m[K,
+[12.230s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:33[m[K,
+[12.230s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[12.230s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[12.230s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[12.230s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23[m[K,
+[12.230s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26[m[K,
+[12.230s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31[m[K,
+[12.230s]                  from [01m[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9[m[K:
+[12.230s] /home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<6, g2o::SE3Quat, g2o::VertexSE3Expmap, g2o::VertexSE3Expmap>[m[K’:
+[12.230s] [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:83:24:[m[K   required from here
+[12.230s] [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[12.230s]    59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[12.230s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[12.231s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[12.231s]                  from [01m[K/usr/include/eigen3/Eigen/LU:11[m[K,
+[12.231s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12[m[K,
+[12.231s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7[m[K,
+[12.231s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7[m[K,
+[12.231s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:28[m[K,
+[12.231s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[12.231s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[12.231s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[12.231s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23[m[K,
+[12.231s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26[m[K,
+[12.231s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31[m[K,
+[12.231s]                  from [01m[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9[m[K:
+[12.231s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[12.231s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[12.231s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[12.231s] In file included from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[12.231s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Converter.h:26[m[K,
+[12.231s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:33[m[K,
+[12.231s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[12.232s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[12.232s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[12.232s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23[m[K,
+[12.232s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26[m[K,
+[12.232s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31[m[K,
+[12.232s]                  from [01m[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9[m[K:
+[12.232s] [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[12.232s]    60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[12.232s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[12.232s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[12.232s]                  from [01m[K/usr/include/eigen3/Eigen/LU:11[m[K,
+[12.232s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12[m[K,
+[12.232s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7[m[K,
+[12.232s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7[m[K,
+[12.232s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:28[m[K,
+[12.232s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[12.232s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[12.232s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[12.232s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23[m[K,
+[12.232s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26[m[K,
+[12.232s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31[m[K,
+[12.233s]                  from [01m[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9[m[K:
+[12.233s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[12.233s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[12.233s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[12.319s] In file included from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[12.319s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Converter.h:26[m[K,
+[12.319s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:33[m[K,
+[12.319s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[12.320s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[12.320s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[12.320s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23[m[K,
+[12.320s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26[m[K,
+[12.320s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31[m[K,
+[12.320s]                  from [01m[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9[m[K:
+[12.320s] /home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>[m[K’:
+[12.320s] [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:114:35:[m[K   required from here
+[12.320s] [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[12.320s]    59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[12.320s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[12.320s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[12.320s]                  from [01m[K/usr/include/eigen3/Eigen/LU:11[m[K,
+[12.320s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12[m[K,
+[12.320s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7[m[K,
+[12.320s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7[m[K,
+[12.320s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:28[m[K,
+[12.320s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[12.320s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[12.320s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[12.321s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23[m[K,
+[12.321s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26[m[K,
+[12.321s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31[m[K,
+[12.321s]                  from [01m[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9[m[K:
+[12.321s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[12.321s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[12.321s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[12.338s] In file included from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[12.338s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Converter.h:26[m[K,
+[12.338s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:33[m[K,
+[12.338s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[12.338s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[12.338s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[12.338s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23[m[K,
+[12.338s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26[m[K,
+[12.339s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31[m[K,
+[12.339s]                  from [01m[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9[m[K:
+[12.339s] [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[12.339s]    60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[12.339s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[12.339s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[12.339s]                  from [01m[K/usr/include/eigen3/Eigen/LU:11[m[K,
+[12.339s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12[m[K,
+[12.339s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7[m[K,
+[12.339s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7[m[K,
+[12.339s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:28[m[K,
+[12.339s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[12.339s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[12.339s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[12.339s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23[m[K,
+[12.339s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26[m[K,
+[12.339s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31[m[K,
+[12.339s]                  from [01m[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9[m[K:
+[12.340s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[12.340s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[12.340s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[12.412s] In file included from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[12.412s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Converter.h:26[m[K,
+[12.412s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:33[m[K,
+[12.412s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[12.412s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[12.412s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[12.412s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23[m[K,
+[12.412s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26[m[K,
+[12.412s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31[m[K,
+[12.412s]                  from [01m[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9[m[K:
+[12.412s] /home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<3, Eigen::Matrix<double, 3, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>[m[K’:
+[12.412s] [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:146:41:[m[K   required from here
+[12.413s] [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[12.413s]    59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[12.413s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[12.413s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[12.413s]                  from [01m[K/usr/include/eigen3/Eigen/LU:11[m[K,
+[12.413s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12[m[K,
+[12.413s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7[m[K,
+[12.413s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7[m[K,
+[12.413s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:28[m[K,
+[12.413s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[12.413s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[12.413s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[12.413s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23[m[K,
+[12.413s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26[m[K,
+[12.413s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31[m[K,
+[12.413s]                  from [01m[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9[m[K:
+[12.413s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[12.413s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[12.414s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[12.414s] In file included from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[12.414s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Converter.h:26[m[K,
+[12.414s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:33[m[K,
+[12.414s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[12.414s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[12.414s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[12.414s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23[m[K,
+[12.414s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26[m[K,
+[12.414s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31[m[K,
+[12.414s]                  from [01m[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9[m[K:
+[12.414s] [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[12.414s]    60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[12.414s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[12.414s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[12.414s]                  from [01m[K/usr/include/eigen3/Eigen/LU:11[m[K,
+[12.414s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12[m[K,
+[12.414s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7[m[K,
+[12.415s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7[m[K,
+[12.415s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:28[m[K,
+[12.415s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[12.415s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[12.415s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[12.415s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23[m[K,
+[12.415s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26[m[K,
+[12.415s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31[m[K,
+[12.415s]                  from [01m[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9[m[K:
+[12.415s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[12.415s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[12.415s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[12.675s] In file included from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37[m[K,
+[12.675s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Converter.h:26[m[K,
+[12.675s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:33[m[K,
+[12.675s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[12.675s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[12.675s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[12.676s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23[m[K,
+[12.676s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26[m[K,
+[12.676s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31[m[K,
+[12.676s]                  from [01m[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9[m[K:
+[12.676s] /home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘[01m[Kclass g2o::BaseVertex<7, g2o::Sim3>[m[K’:
+[12.676s] [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:48:35:[m[K   required from here
+[12.676s] [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[12.676s]    62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+[12.676s]       |                                                                  [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[12.676s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[12.676s]                  from [01m[K/usr/include/eigen3/Eigen/LU:11[m[K,
+[12.676s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12[m[K,
+[12.676s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7[m[K,
+[12.676s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7[m[K,
+[12.677s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:28[m[K,
+[12.677s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[12.677s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[12.677s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[12.677s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23[m[K,
+[12.677s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26[m[K,
+[12.677s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31[m[K,
+[12.677s]                  from [01m[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9[m[K:
+[12.678s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[12.678s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[12.678s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[12.715s] In file included from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[12.715s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Converter.h:26[m[K,
+[12.715s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:33[m[K,
+[12.715s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[12.715s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[12.715s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[12.715s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23[m[K,
+[12.715s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26[m[K,
+[12.715s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31[m[K,
+[12.716s]                  from [01m[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9[m[K:
+[12.716s] /home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<7, g2o::Sim3, g2o::VertexSim3Expmap, g2o::VertexSim3Expmap>[m[K’:
+[12.716s] [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:99:27:[m[K   required from here
+[12.716s] [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[12.716s]    59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[12.716s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[12.716s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[12.716s]                  from [01m[K/usr/include/eigen3/Eigen/LU:11[m[K,
+[12.716s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12[m[K,
+[12.716s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7[m[K,
+[12.716s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7[m[K,
+[12.716s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:28[m[K,
+[12.716s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[12.716s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[12.716s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[12.716s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23[m[K,
+[12.716s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26[m[K,
+[12.716s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31[m[K,
+[12.716s]                  from [01m[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9[m[K:
+[12.716s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[12.716s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[12.716s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[12.717s] In file included from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[12.717s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Converter.h:26[m[K,
+[12.717s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:33[m[K,
+[12.717s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[12.717s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[12.717s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[12.717s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23[m[K,
+[12.717s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26[m[K,
+[12.717s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31[m[K,
+[12.717s]                  from [01m[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9[m[K:
+[12.717s] [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[12.717s]    60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[12.717s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[12.717s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[12.718s]                  from [01m[K/usr/include/eigen3/Eigen/LU:11[m[K,
+[12.718s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12[m[K,
+[12.718s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7[m[K,
+[12.718s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7[m[K,
+[12.718s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:28[m[K,
+[12.718s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[12.718s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[12.718s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[12.718s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23[m[K,
+[12.718s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26[m[K,
+[12.718s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31[m[K,
+[12.718s]                  from [01m[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9[m[K:
+[12.718s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[12.718s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[12.718s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[12.770s] In file included from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[12.770s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Converter.h:26[m[K,
+[12.770s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:33[m[K,
+[12.770s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[12.770s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[12.770s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[12.770s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23[m[K,
+[12.770s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26[m[K,
+[12.770s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31[m[K,
+[12.770s]                  from [01m[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9[m[K:
+[12.770s] /home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSim3Expmap>[m[K’:
+[12.770s] [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:130:36:[m[K   required from here
+[12.771s] [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[12.771s]    59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[12.771s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[12.771s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[12.771s]                  from [01m[K/usr/include/eigen3/Eigen/LU:11[m[K,
+[12.771s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12[m[K,
+[12.771s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7[m[K,
+[12.771s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7[m[K,
+[12.771s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:28[m[K,
+[12.771s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[12.771s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[12.771s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[12.771s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23[m[K,
+[12.771s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26[m[K,
+[12.771s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31[m[K,
+[12.771s]                  from [01m[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9[m[K:
+[12.771s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[12.771s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[12.771s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[12.790s] In file included from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[12.790s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Converter.h:26[m[K,
+[12.790s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:33[m[K,
+[12.790s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[12.790s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[12.790s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[12.790s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23[m[K,
+[12.790s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26[m[K,
+[12.790s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31[m[K,
+[12.790s]                  from [01m[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9[m[K:
+[12.790s] [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[12.790s]    60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[12.790s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[12.790s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[12.790s]                  from [01m[K/usr/include/eigen3/Eigen/LU:11[m[K,
+[12.791s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12[m[K,
+[12.791s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7[m[K,
+[12.791s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7[m[K,
+[12.791s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Frame.h:28[m[K,
+[12.791s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[12.791s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[12.791s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[12.791s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Viewer.h:23[m[K,
+[12.791s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/Tracking.h:26[m[K,
+[12.791s]                  from [01m[K/home/huyen/vio_slam/ORB_SLAM3/include/System.h:31[m[K,
+[12.791s]                  from [01m[K/home/huyen/drone_project/ros2_ws/src/vio_slam_bridge/src/vio_node.cpp:9[m[K:
+[12.791s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[12.791s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[12.791s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[23.851s] [100%] [32m[1mLinking CXX executable vio_node[0m
+[25.321s] [100%] Built target vio_node
+[25.337s] Invoked command in '/home/huyen/drone_project/ros2_ws/build/vio_slam_bridge' returned '0': CMAKE_PREFIX_PATH=/home/huyen/drone_project/ros2_ws/install/uav_cloud_bridge:/home/huyen/drone_project/ros2_ws/install/precision_landing:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/huyen/drone_project/ros2_ws/build/vio_slam_bridge -- -j6 -l6
+[25.349s] Invoking command in '/home/huyen/drone_project/ros2_ws/build/vio_slam_bridge': CMAKE_PREFIX_PATH=/home/huyen/drone_project/ros2_ws/install/uav_cloud_bridge:/home/huyen/drone_project/ros2_ws/install/precision_landing:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/huyen/drone_project/ros2_ws/build/vio_slam_bridge
+[25.357s] -- Install configuration: ""
+[25.358s] -- Installing: /home/huyen/drone_project/ros2_ws/install/vio_slam_bridge/lib/vio_slam_bridge/vio_node
+[25.360s] -- Set runtime path of "/home/huyen/drone_project/ros2_ws/install/vio_slam_bridge/lib/vio_slam_bridge/vio_node" to ""
+[25.361s] -- Installing: /home/huyen/drone_project/ros2_ws/install/vio_slam_bridge/share/ament_index/resource_index/package_run_dependencies/vio_slam_bridge
+[25.362s] -- Installing: /home/huyen/drone_project/ros2_ws/install/vio_slam_bridge/share/ament_index/resource_index/parent_prefix_path/vio_slam_bridge
+[25.363s] -- Installing: /home/huyen/drone_project/ros2_ws/install/vio_slam_bridge/share/vio_slam_bridge/environment/ament_prefix_path.sh
+[25.363s] -- Installing: /home/huyen/drone_project/ros2_ws/install/vio_slam_bridge/share/vio_slam_bridge/environment/ament_prefix_path.dsv
+[25.363s] -- Installing: /home/huyen/drone_project/ros2_ws/install/vio_slam_bridge/share/vio_slam_bridge/environment/path.sh
+[25.364s] -- Installing: /home/huyen/drone_project/ros2_ws/install/vio_slam_bridge/share/vio_slam_bridge/environment/path.dsv
+[25.364s] -- Installing: /home/huyen/drone_project/ros2_ws/install/vio_slam_bridge/share/vio_slam_bridge/local_setup.bash
+[25.364s] -- Installing: /home/huyen/drone_project/ros2_ws/install/vio_slam_bridge/share/vio_slam_bridge/local_setup.sh
+[25.365s] -- Installing: /home/huyen/drone_project/ros2_ws/install/vio_slam_bridge/share/vio_slam_bridge/local_setup.zsh
+[25.365s] -- Installing: /home/huyen/drone_project/ros2_ws/install/vio_slam_bridge/share/vio_slam_bridge/local_setup.dsv
+[25.365s] -- Installing: /home/huyen/drone_project/ros2_ws/install/vio_slam_bridge/share/vio_slam_bridge/package.dsv
+[25.365s] -- Installing: /home/huyen/drone_project/ros2_ws/install/vio_slam_bridge/share/ament_index/resource_index/packages/vio_slam_bridge
+[25.367s] -- Installing: /home/huyen/drone_project/ros2_ws/install/vio_slam_bridge/share/vio_slam_bridge/cmake/vio_slam_bridgeConfig.cmake
+[25.370s] -- Installing: /home/huyen/drone_project/ros2_ws/install/vio_slam_bridge/share/vio_slam_bridge/cmake/vio_slam_bridgeConfig-version.cmake
+[25.370s] -- Installing: /home/huyen/drone_project/ros2_ws/install/vio_slam_bridge/share/vio_slam_bridge/package.xml
+[25.374s] Invoked command in '/home/huyen/drone_project/ros2_ws/build/vio_slam_bridge' returned '0': CMAKE_PREFIX_PATH=/home/huyen/drone_project/ros2_ws/install/uav_cloud_bridge:/home/huyen/drone_project/ros2_ws/install/precision_landing:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/huyen/drone_project/ros2_ws/build/vio_slam_bridge

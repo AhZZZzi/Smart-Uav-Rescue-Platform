@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin — Medical Drone Network</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Expanded:wght@700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0C0F12;
+    --bg-elevated: #14181C;
+    --bg-card: #181D22;
+    --hairline: #262C32;
+    --text: #F2EFE9;
+    --text-dim: #9098A0;
+    --text-faint: #5C636B;
+    --flare: #FF6A3D;
+    --flare-dim: #C7491F;
+    --locked: #4BC9A0;
+    --danger: #E5535A;
+    --amber: #E5B84B;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', -apple-system, sans-serif;
+  }
+
+  header {
+    position: sticky; top: 0; z-index: 10;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 24px;
+    background: rgba(12,15,18,0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--hairline);
+  }
+
+  .brand { display: flex; align-items: center; gap: 9px; }
+  .brand .bar { width: 5px; height: 5px; border-radius: 50%; background: var(--flare); }
+  .brand .name { font-family: 'Archivo Expanded', sans-serif; font-weight: 800; font-size: 15px; }
+
+  .header-right { display: flex; align-items: center; gap: 16px; }
+  .nav-link {
+    font-size: 13px; font-weight: 600; color: var(--text-dim);
+    text-decoration: none;
+  }
+  .nav-link:hover { color: var(--text); }
+  .logout-btn {
+    font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 600;
+    color: var(--text-dim); background: none; border: none; cursor: pointer;
+  }
+  .logout-btn:hover { color: var(--danger); }
+
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 28px 24px 60px;
+  }
+
+  .section-title {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--text-faint);
+    margin: 0 0 14px;
+  }
+
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--hairline);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 32px;
+  }
+
+  .field-row { display: flex; gap: 12px; flex-wrap: wrap; }
+  .field { flex: 1; min-width: 140px; margin-bottom: 16px; }
+
+  label {
+    display: block; font-size: 12.5px; font-weight: 600;
+    color: var(--text-dim); margin-bottom: 7px;
+  }
+
+  input, select {
+    width: 100%;
+    background: var(--bg);
+    border: 1px solid var(--hairline);
+    border-radius: 11px;
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    font-size: 14.5px;
+    padding: 12px 14px;
+  }
+  input:focus, select:focus { outline: none; border-color: var(--flare-dim); }
+
+  button.submit {
+    padding: 12px 20px;
+    border: none; border-radius: 11px;
+    background: linear-gradient(180deg, var(--flare), var(--flare-dim));
+    color: #fff;
+    font-family: 'Archivo Expanded', sans-serif;
+    font-weight: 800; font-size: 14px;
+    cursor: pointer;
+  }
+  button.submit:disabled { opacity: 0.6; cursor: not-allowed; }
+
+  .msg {
+    display: none;
+    margin-top: 14px;
+    padding: 11px 14px;
+    border-radius: 10px;
+    font-size: 13px;
+  }
+  .msg.show { display: block; }
+  .msg.ok { background: rgba(75,201,160,0.1); border: 1px solid rgba(75,201,160,0.35); color: var(--locked); }
+  .msg.error { background: rgba(229,83,90,0.1); border: 1px solid rgba(229,83,90,0.35); color: var(--danger); }
+
+  table { width: 100%; border-collapse: collapse; }
+  th {
+    text-align: left;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--text-faint);
+    padding: 0 0 10px;
+    border-bottom: 1px solid var(--hairline);
+  }
+  td {
+    padding: 12px 0;
+    font-size: 14px;
+    border-bottom: 1px solid var(--hairline);
+  }
+  tr:last-child td { border-bottom: none; }
+
+  .role-badge {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10.5px; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 3px 9px; border-radius: 20px;
+  }
+  .role-badge.admin { background: rgba(229,184,75,0.14); color: var(--amber); }
+  .role-badge.staff { background: rgba(75,201,160,0.14); color: var(--locked); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand"><span class="bar"></span><span class="name">DISPATCH ADMIN</span></div>
+  <div class="header-right">
+    <a class="nav-link" href="dashboard.html">Dashboard</a>
+    <button class="logout-btn" onclick="logout()">Sign out</button>
+  </div>
+</header>
+
+<main>
+  <div class="section-title">Create account</div>
+  <div class="card">
+    <form id="createForm">
+      <div class="field-row">
+        <div class="field">
+          <label for="newUsername">Username</label>
+          <input type="text" id="newUsername" required>
+        </div>
+        <div class="field">
+          <label for="newPassword">Password</label>
+          <input type="password" id="newPassword" required>
+        </div>
+        <div class="field">
+          <label for="newRole">Role</label>
+          <select id="newRole">
+            <option value="staff">Staff</option>
+            <option value="admin">Admin</option>
+          </select>
+        </div>
+      </div>
+      <button type="submit" class="submit" id="createBtn">Create account</button>
+      <div class="msg" id="createMsg"></div>
+    </form>
+  </div>
+
+  <div class="section-title">All accounts</div>
+  <div class="card">
+    <table>
+      <thead><tr><th>Username</th><th>Role</th></tr></thead>
+      <tbody id="userTableBody"></tbody>
+    </table>
+  </div>
+</main>
+
+<script>
+  const RELAY_HTTP = "https://uav-rescue-relay.onrender.com";
+  const token = sessionStorage.getItem("staff_token");
+  const role = sessionStorage.getItem("staff_role");
+
+  if (!token || role !== "admin") {
+    window.location.href = "login.html";
+  }
+
+  function logout() {
+    sessionStorage.clear();
+    window.location.href = "login.html";
+  }
+
+  async function loadUsers() {
+    const res = await fetch(`${RELAY_HTTP}/admin/staff`, {
+      headers: { Authorization: `Bearer ${token}` },
+    });
+    if (res.status === 401 || res.status === 403) { logout(); return; }
+    const users = await res.json();
+    document.getElementById("userTableBody").innerHTML = users.map(u => `
+      <tr>
+        <td>${escapeHtml(u.username)}</td>
+        <td><span class="role-badge ${u.role}">${u.role}</span></td>
+      </tr>
+    `).join("");
+  }
+
+  function escapeHtml(str) {
+    const div = document.createElement("div");
+    div.textContent = str;
+    return div.innerHTML;
+  }
+
+  document.getElementById("createForm").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const username = document.getElementById("newUsername").value.trim();
+    const password = document.getElementById("newPassword").value;
+    const newRole = document.getElementById("newRole").value;
+    const btn = document.getElementById("createBtn");
+    const msg = document.getElementById("createMsg");
+
+    btn.disabled = true;
+    msg.className = "msg";
+
+    try {
+      const res = await fetch(`${RELAY_HTTP}/admin/staff`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({ username, password, role: newRole }),
+      });
+
+      if (!res.ok) {
+        const err = await res.json();
+        throw new Error(err.detail || "Could not create account");
+      }
+
+      msg.textContent = `Account "${username}" created.`;
+      msg.classList.add("show", "ok");
+      document.getElementById("createForm").reset();
+      loadUsers();
+    } catch (err) {
+      msg.textContent = err.message;
+      msg.classList.add("show", "error");
+    } finally {
+      btn.disabled = false;
+    }
+  });
+
+  loadUsers();
+</script>
+</body>
+</html>
